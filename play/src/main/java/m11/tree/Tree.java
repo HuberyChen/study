@@ -25,4 +25,12 @@ public class Tree<T> {
 
         return false;
     }
+
+    public Node<T> getRoot() {
+        return root;
+    }
+
+    public void setRoot(final Node<T> root) {
+        this.root = root;
+    }
 }
