@@ -1,9 +1,9 @@
 package m11.answer.chi;
 
+import com.google.common.base.Stopwatch;
 import m11.tree.Tree;
 import m11.tree.TreeSerializer;
 import m11.tree.TreeTest;
-import com.google.common.base.Stopwatch;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -20,7 +20,7 @@ public class TreeSerializerTest {
 
     @Before
     public void init() {
-        treeSerializer = new TreeSerializerImpl();
+        treeSerializer = null; //Replace with your own implementation
     }
 
     @Test
