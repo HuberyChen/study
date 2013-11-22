@@ -4,103 +4,86 @@ import m11.tree.Node;
 import m11.tree.Tree;
 import m11.tree.TreeSerializer;
 
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.FileOutputStream;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.util.ArrayList;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.OutputStreamWriter;
+import java.nio.file.Files;
 import java.util.Deque;
+import java.util.HashMap;
 import java.util.LinkedList;
-import java.util.List;
+import java.util.Map;
 
 /**
  * @author hubery.chen
  * @date (2013-11-14 22:44)
  */
-public class TreeSerializerImpl implements TreeSerializer {
+public class TreeSerializerImpl<T> implements TreeSerializer<T> {
 
     private String LEFT_NODE_END = "LEFT_NODE_END";
     private String RIGHT_NODE_END = "RIGHT_NODE_END";
 
     @Override
-    public File serializer(final Tree tree) {
-        List<Object> list = new ArrayList<>();
-        preOrder(tree.getRoot(), list);
-        File outFile = new File("D:/test/tree.txt");
-        try (FileOutputStream out = new FileOutputStream(outFile);
-             ObjectOutputStream objectOutputStream = new ObjectOutputStream(out)) {
-            objectOutputStream.writeObject(list);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return outFile;
-    }
+    public File serialize(Tree<T> tree) {
+        try {
+            File file = Files.createTempFile("tree", "dat").toFile();
+            if (tree.getRoot() == null) {
+                return file;
+            } else {
+                Deque<Node> nodes = new LinkedList<>();
 
-    public void preOrder(Node p, List<Object> list) {
-        if (p == null) {
-            return;
-        }
-        list.add(visit(p));
-        if (null == p.getLeft()) {
-            list.add(LEFT_NODE_END);
-        } else {
-            preOrder(p.getLeft(), list);
-        }
-        if (null == p.getRight()) {
-            list.add(RIGHT_NODE_END);
-        } else {
-            preOrder(p.getRight(), list);
-        }
-    }
+                nodes.push(tree.getRoot());
+                BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(file)));
 
-    private Object visit(Node p) {
-        return p.getValue();
+                while (!nodes.isEmpty()) {
+                    Node current = nodes.poll();
+
+                    bufferedWriter.write((String) current.getValue());
+                    bufferedWriter.write('\n');
+
+                    if (current.getLeft() != null) {
+                        nodes.addLast(current.getLeft());
+                    } else {
+                        bufferedWriter.write(LEFT_NODE_END);
+                        bufferedWriter.write('\n');
+                    }
+
+                    if (current.getRight() != null) {
+                        nodes.addLast(current.getRight());
+                    } else {
+                        bufferedWriter.write(RIGHT_NODE_END);
+                        bufferedWriter.write('\n');
+                    }
+                }
+
+                bufferedWriter.close();
+                return file;
+            }
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
     }
 
     @Override
-    public Tree deserializer(final File file) {
-        List<Object> list = new ArrayList<>();
-        try (FileInputStream fReader = new FileInputStream(file);
-             ObjectInputStream objectInputStream = new ObjectInputStream(fReader)) {
-            list = (List<Object>) objectInputStream.readObject();
+    public Tree deserialize(File file) {
+        Map<Integer, Node<T>> indexes = new HashMap<>();
+        try {
+            BufferedReader reader = new BufferedReader(new FileReader(file));
+            String line;
+            while ((line = reader.readLine()) != null) {
+
+                Node<T> node = new Node<>((T) line.substring(0));
+            }
+
+            reader.close();
+
+            return new Tree(indexes.get(1));
         } catch (Exception e) {
-            e.printStackTrace();
+            throw new RuntimeException(e);
         }
-        return generateTreeByList(list);
-    }
-
-    private Tree<Object> generateTreeByList(List<Object> list) {
-        Deque<Object> stack = listConvertToDeque(list);
-        if (null == stack && 0 == stack.size()) {
-            return null;
-        }
-        return new Tree<Object>(generateNode(stack));
-    }
-
-    private Deque<Object> listConvertToDeque(List<Object> list) {
-        if (null == list && list.size() == 0) {
-            return null;
-        }
-        Deque<Object> stack = new LinkedList<>();
-        for (Object obj : list) {
-            stack.add(obj);
-        }
-        return stack;
-    }
-
-    private Node<Object> generateNode(Deque<Object> stack) {
-        Node<Object> node = new Node<Object>(stack.remove());
-        if (!stack.getFirst().equals(LEFT_NODE_END)) {
-            node.setLeft(generateNode(stack));
-        } else {
-            stack.remove();
-        }
-        if (!stack.getFirst().equals(RIGHT_NODE_END)) {
-            node.setRight(generateNode(stack));
-        } else {
-            stack.remove();
-        }
-        return node;
     }
 }
