@@ -1,4 +1,4 @@
-package Exception.Construction;
+package exception.Construction;
 
 import java.io.IOException;
 

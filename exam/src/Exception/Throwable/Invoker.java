@@ -1,4 +1,4 @@
-package Exception.Throwable;
+package exception.Throwable;
 
 /**
  * @author hubery.chen
