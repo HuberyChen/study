@@ -1,0 +1,2728 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Vertex O Series Version 6.0 SR7.7  Release Notes</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<style type="text/css">
+<!--
+body {
+	font-size: 10pt;
+	background-color: #ffffff;
+	font-family: "Arial", verdana, arial, helvetica, sans-serif;
+}
+
+h1 {
+	font-weight: bold;
+	font-size: 14pt;
+	color: #ffffff;
+	background-color: #002C5F;
+}
+
+h2 {
+	font-weight: bold;
+	font-size: 12pt;
+	color: #002C5F;
+}
+
+h3 {
+	font-weight: bold;
+	font-size: 10pt;
+	font-style: italic;
+	color: #002C5F;
+}
+
+h4 {
+	font-weight: bold;
+	font-size: 10pt;
+}
+
+p {
+	margin-top: 0pt;
+	font-size: 10pt;
+	margin-bottom: 10pt;
+	font-family: Arial, sans-serif;
+}
+
+p.CodeBlock {
+	font-family: "Courier New", monospace;
+	font-weight: normal;
+	font-style: normal;
+	margin-left: 40px;
+	margin-right: 40px;
+	margin-bottom: 0px;
+}
+
+p.Note {
+	padding: 5px 5px 5px 5px;
+	background-color: #D5E0EC;
+}
+
+p.Caution {
+	font-weight: normal;
+	font-style: normal;
+	border: 1px solid #c9282d;
+	padding: 5px 5px 5px 5px;
+	}
+
+p.Small {
+	font-size: 8pt;
+	font-family: "MS Sans Serif", sans-serif;
+}
+
+ol.alpha {
+	list-style:upper-alpha;	
+}
+
+li {
+	padding-top: 5pt;
+	padding-bottom: 5pt;
+}
+
+.TableHeading {
+	font-weight: bold;
+	font-style: normal;
+	color: #002C5F;
+	background-color: #ffd200;
+}
+
+td {
+	font-size: 10pt;
+	text-align: left;
+	vertical-align:top;
+}
+
+hr  {
+	color: #BED600;
+}
+
+span.Code {
+	font-family: "Courier New", monospace;
+}
+
+span.CodeVariable {
+	font-family: "Courier New", monospace;
+	font-weight: normal;
+	font-style: italic;
+}
+
+span.Emphasis {
+	font-style: italic;
+}
+
+span.Strong {
+	font-weight: bold;
+}
+
+p.Right {
+	text-align: right;
+}
+.style1 {
+	font-family: Arial, Helvetica, sans-serif
+}
+.style3 {font-family: "Courier New", Courier, monospace; font-size: 9pt; }
+.style4 {font-family: "Courier New", Courier, monospace}
+
+-->
+</style>
+</head>
+
+<body marginwidth="50">
+<h1> Release Notes for Vertex&reg;<em> O Series</em>&reg; </h1>
+<h2>Vertex&reg; Indirect Tax <em>O Series</em>&reg;<br />
+Vertex&reg; Exemption Certificate Manager&#8482; </h2>
+<p>Version: 6.0 SR7.7<br />
+  Release Date: October 14, 2013</p>
+<p>Copyright © 2013 Vertex Global Tax Solutions Ireland Holdings. All rights reserved.</p>
+
+<h2><a name="Contents" id="Contents"></a>Contents</h2>
+<table width="50%" border="0">
+  <tr>
+    <td><ul>
+      <li><a href="#Purpose">Purpose of this document</a></li>
+      <li><a href="#New">Software changes</a></li>
+      <li><a href="#Known">Known issues</a></li>
+      <li><a href="#Product">Product description</a></li>
+    </ul></td>
+    <td><ul>
+      <li><a href="#Install">Installation notes</a></li>
+      <li><a href="#Documentation">Documentation</a></li>
+      <li><a href="#DocErrata">Documentation errata</a></li>
+      <li><a href="#ContactingVertex">Contacting Vertex</a></li>
+    </ul></td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<hr />
+
+<h2><a name="Purpose" id="Purpose"></a>Purpose of this document</h2>
+<p>These Release Notes provide information on the latest Service Release (SR) of the Vertex O Series platform. They are not meant to replace the documentation
+and online help. For detailed information on installing and using Vertex O Series, refer to the <a href="#Documentation">documentation</a>.</p>
+<p>For each major O Series release (for example, O Series 6.0), Vertex issues Service Releases (for example, O Series 6.0 SR1) once or twice a year that contain enhancements and fixes for defects. In between Service Releases, Vertex issues Maintenance Packs (for example, O Series 6.0 SR6.1) that address higher-priority defects.</p>
+<p class="Caution">All information in these Release Notes and the accompanying documentation is subject to change with 
+subsequent service releases. Before attempting to install Vertex O Series, visit the myVertex 
+Customer Portal (<a href="http://my.vertexinc.com">http://my.vertexinc.com</a><a href="http://www.vertexinc.com/CustomerCafe/"></a>) 
+and download the latest  service release to ensure that you have the most up-to-date software, Release Notes, and documentation.</p>
+<hr />
+<h2><a name="New" id="New"></a>Software changes</h2>
+
+<h3>Changes in 6.0 SR7.7</h3>
+<h4>System changes</h4>
+<ol>
+<li><!-- 67109 -->The About page has been modified to remove the http.proxyUser and http.proxyPassword parameters from the Config File Overrides section.</li>
+<li><!-- 67461 -->An issue with Tax Data Import, where taxpayer  jurisdiction registrations did not import consistently, has been resolved. </li>
+</ol>
+<h4>Retail Tax Extract (RTE) change</h4>
+<ol>
+<li><!-- 67287 --> RTE now produces Send Sales records when a filter specifies a relative date range that encompasses one day. This change fixes an issue where RTE did not calculate sales data when a filter specified both the <b>Send Sales</b> option and an <b>Extract Data Between</b> date range of one day. </li>
+</ol>
+
+<h3>Changes in 6.0 SR7.6</h3>
+<h4>Calculation Engine changes</h4>
+<ol>
+<li><!-- 60755 --> Distribute tax transactions that force a tax on a freight amount are now supported. This change fixes an issue with Distribute Tax transactions, where a rounding difference  between the original single Invoice transaction and the corresponding multiple Distribute Tax transactions caused the Distribute Tax transactions to fail.  To force a tax in a Distribute Tax transaction on a freight amount of $0.00,  set the following parameters:</li>
+<ul><li><span class="Code">tps.common.domain.force_distributetax_on_failure.supplies=true</span></li>
+<li><span class="Code">tps.common.domain.force_distributetax_on_failure.procurement=true</span></li>
+</ul>
+<li> Invoice Verification events that invoke user-defined basis rules now correctly return sales tax. This change fixes an issue where these events were incorrectly returning consumer use tax after invoking user-defined basis rules.</li>
+<li> Processing for Brazil transactions now  accommodates reduction of the Substitution Tax by a specified imposition and/or  a specified percentage. The following  two new configuration parameters support this change:</li>
+<ul>
+<li><span class="Code">com.vertexinc.tps.common.domain.substitution.credit.imposition=xxx;y</span> (where xxx is the Imposition Type ID and Y is the ImpositionType source ID)</span></li>
+<li><span class="Code">com.vertexinc.tps.common.domain.substitution.credit.reduction.flexfield=SUBCRED</span> (where SUBCRED should be replaced by the name of the numeric flex field that holds the ICMS credit  percentage)</li>
+</ul>
+<p>O  Series automatically deducts the Substitution Tax by 100% of the ICMS Reseller  Tax.  The new configuration parameters  provide flexibility by enabling you to deduct the Substitution Tax by an  additional imposition or by a specified percentage of the ICMS Reseller Tax or  other imposition.</p>
+<p>With the <span class="Code">imposition</span> parameter, you can specify a Vertex-defined imposition or a user-defined imposition that will be deducted from the Substitution Tax, along with the ICMS Reseller Tax.</p>
+<p>With the <span class="Code">flexfield</span> parameter, you can change the percentage of the ICMS Reseller tax or other imposition that is deducted from the initial Substitution Tax amount. To use this parameter, set up a numeric flexible field that specifies the percentage of the ICMS Reseller Tax that is subtracted from the Substitution Tax.  To apply the parameter to multiple jurisdictions, also set up a Lookup Table by NCM and Destination State to derive the ICMS credit reduction percentage, as well as a Tax Assist rule that populates the flexible field value with the ICMS credit percentage.</p>
+<p>Depending  on your objective, use these parameters either individually or in combination,  as follows:</p>
+<ul>
+<li>To reduce the Substitution Tax by a specified percentage of the ICMS Reseller tax, use only the <span class="Code">flexfield</span> parameter.</li>
+<li>To  reduce the Substitution Tax by 100% of both the ICMS Reseller tax and another  imposition, use only the <span class="Code">imposition</span>  parameter. </li>
+<li>To  reduce the Substitution Tax by a specified percentage of both the ICMS Reseller  tax and another imposition, use both parameters.  (Note that this scenario could result in a double  deduction of the ICMS Reseller tax if both taxes are calculated for a given transaction.)</li>
+</ul>
+<li> Sales tax holiday rules in the U.S. state of Georgia can now be overridden correctly by user-defined rules.</li>
+<li><!-- 65835 -->
+   An issue with bracket tax calculation for the U.S. state of Maine, where O Series calculated an incorrect tax amount for a transaction having a basis rule and multiple line items, has been resolved.</li>
+<li> An issue with U.S. state of Pennsylvania bracket tax calculations, where invoice tax amounts were inaccurate for transactions that included user-defined rules  apportioned by taxable amount, has been resolved.</li>
+<li><!-- 66070 --> Effective rates in requests with multiple line items are now rounded to 6 decimal places.</li>
+</ol>
+
+<h4>Retail Tax Extract (RTE) changes</h4>
+<ol>
+<li> An issue with combined rate  bracket rules in the U.S. state of Virginia, where the Calculation Engine incorrectly applied an extra penny difference to state taxes for meals, has been resolved. O Series now correctly calculates and creates a bracket schedule for Virginia meals taxes.</li>
+<li> An issue with RTE bracket schedules in the U.S. state of South Carolina has been resolved, and correct taxes are now applied for each bracket.</li>
+</ol>
+<h4>Retail Local Indirect Tax Engine (LITE) changes</h4>
+<ol>
+<li>All changes listed in the "Calculation Engine changes" section above also apply to Retail LITE deployments.</li>
+</ol>
+
+<h4>Miscellaneous change</h4>
+<ol>
+<li> An issue with Tomcat threads, where Tomcat became unavailable and  tax calculations for Brazil transactions failed, has been resolved.</li>
+</ol>
+
+<h3>Changes in 6.0 SR7.5</h3>
+<h4>Calculation Engine changes</h4>
+<ol>
+<li><!-- 64734 --> An issue with ARBillingSync transactions &#8211 where a transaction duplicated jurisdiction levels, returned different tax amounts in the XML response, and incorrectly returned Sales tax rather than Sellers Use tax &#8211 has been resolved. The ARBillingSync transactions now return the correct tax type for the jurisdiction level.</li>
+<li> An issue that caused a null pointer exception (NPE) error when calculating value added tax in the Czech Republic has been resolved.</li>
+<li> An issue with user-defined rules not overriding sales tax holiday rules in the U.S. state of Georgia has been resolved. A user-defined rule now correctly has precedence over a sales tax holiday rule.</li>
+<li><!-- 65541 --> A line item tax effective rate is now calculated correctly when a Bracket tax is applied.</li>
+</ol>
+
+<h4>Tax Setup changes</h4>
+<ol>
+<li> When you change the End Date in a Tax Assist Lookup Table, the new date persists after you save the change.</li>
+<li> An issue with ESS Situs rules, where a business-to-customer transaction resulted in an error, has been resolved.</li>
+</ol>
+<h4>System change</h4>
+<ol>
+<li><!-- 65044 --><!-- 66057 --> Performance when exporting and importing a large number of exemption certificates  has been improved.</li>
+</ol>
+
+<h4>Retail Local Indirect Tax Engine (LITE) changes</h4>
+<ol>
+<li>All changes listed in the "Calculation Engine changes" section above also apply to Retail LITE deployments.</li>
+</ol>
+
+<h3>Changes in 6.0 SR7.4</h3>
+<h4>System change</h4>
+<ol>
+  <li>
+    <!-- 64024 -->An issue with Tax Data Export &#8211 where the export   failed because of certificate records that reference a URL for the certificate   image &#8211 has been resolved. </li>
+</ol>
+<h4>Calculation Engine change</h4>
+<ol>
+<li><!-- 63321 -->
+   An issue with taxability of freight in Canada has been resolved. When there is only one line item for apportioning freight (either a parent or only one peer), that line item is used as 100% of the apportionment, even if the weight or extended price is zero. 
+<li><!-- 64458 -->
+  An issue with multicomponent allocation &#8211 where a transaction showed zero tax when the taxIncludedIndicator was set to True &#8211 has been resolved.</li>
+</ol>
+
+<h4>Tax Setup change</h4>
+<ol>
+<li><!-- 64437 -->The Tax Assist administrativeOrigin.currency parameter now exports and imports properly.</li>
+
+<li><!-- 63498 -->
+  Taxability Drivers attached to  Exemption Certificates now display correctly when editing Exemption Certificates.</li>
+
+
+</ol>
+<h4>Retail Tax Extract (RTE) changes</h4>
+<ol>
+<li><!-- 64482 -->
+   RTE logging of non-Vertex exceptions is improved. These exceptions now result in a status of &quot;Completed with failure&quot; and prevent the situation where RTE does not complete processing.</li>
+<li><!-- 64748 -->
+    The issue that caused a null pointer exception when processing max tax scenarios in conjunction with nontaxable rules has been resolved. RTE now uses the effective rule rather than the max tax rule in these scenarios.</li>
+</ol>
+<h3>Changes in 6.0 SR7.3</h3>
+
+<h4>Installation change</h4>
+<ol>
+<li><!-- 62023 -->The O Series  installer and Retail installer have been updated to correct a   failure that occurred when using a  Java Runtime Environment (JRE) that was installed in a directory that contained spaces (for example, C:\Program Files\Java). </li>
+</ol>
+
+<h4>Calculation Engine changes</h4>
+<ol>
+<li><!-- 61096 -->A performance issue that occurred with Update 113 and  Tax Area ID lookup of European Union addresses  has been resolved. (Refer to &quot;Configuration parameter changes&quot; below for related parameters that are now obsolete.)</li>
+<li><!-- 61641 -->An issue where Distribute Tax transactions failed for certain extended price and input total tax amounts has been resolved. These transactions now distribute the calculated taxes and round the results correctly.</li>
+<li><!-- 61894 -->Accrual transactions and Invoice Verification transactions that require apportionment now process without error. This error was caused by incorrect swapping of the basis amount and tax rate and resulted in a message that the value was larger than the precision allowed for the field.</li>
+<li><!-- 62162 -->The issue that caused a null pointer exception (NPE) error while synchronizing an invoice transaction has been resolved, and the synchronization request now modifies the transaction in the Tax Journal.</li>
+</ol>
+
+<h4>Tax Setup changes</h4>
+<ol>
+<li><!-- 61102 -->Max Tax Rules now only fire when all qualifying conditions are met. This change fixes an issue introduced in 6.0 SR7, where a Max Tax Rule fired when only one of the qualifying conditions was met.</li>
+<li>The issue that caused an error when deleting a user-defined imposition has been resolved.</li>
+</ol>
+
+<h4>Reporting changes</h4>
+<ol>
+<li><!-- 62740 -->An issue that occurred when creating a filter for the Data Extract Transaction Detail template &#8211 where the list of values for Taxpayer Company Code did not display &#8211 has been resolved. You can now select  from a list of values for Taxpayer Company Code when creating a filter for this template</li>
+<li><!-- 62740 -->In the Data Extract Transaction Detail template, dates now display correctly.</li>
+<li><!-- 62219 -->The following fields have been added to the VATDetail view in the Reporting Database:</li>
+<ul>
+  <li>Company Name</li>
+  <li>Cost Center Code</li>
+  <li>GL Account Code</li>
+  <li>Output Notice 5</li>
+  <li>Rate Classification</li>
+</ul>
+</ol>
+
+<h4>System change</h4>
+<ol>
+<li><!-- 62846 -->An issue with Tax Journal Export, where an error occurred when a synchronization transaction was written to the Journal with an invalid currency unit, has been resolved.</li>
+</ol>
+
+<h4><!-- 62859 -->Batch Client Interface (BCI) changes</h4>
+<ol>
+<li>Two performance improvements have been made to the Batch Client Interface.
+  <ul>
+    <li>The maximum heap size has been increased from 1024 megabytes to 1280 megabytes.</li>
+    <li>The limit on the number of threads when running BCI through Data Management has been removed. If running BCI as a database service, you can increase the thread count using the <span class="Code">batch.client.threadCount</span> parameter in the vertex.cfg file. If running BCI using a command line script, you can increase the thread count using the <span class="Code">-T</span> command line option on the <span class="Code">runBatchCalcClient.bat/.sh</span> script.</li>
+  </ul>
+</li>
+
+  <li>The <span class="Code">batch.client.activityThreads</span> parameter has been removed from the vertex.cfg file. Thread count for instances that run BCI from Vertex Central is now controlled using the <span class="Code">batch.client.threadCount</span> parameter in the vertex.cfg file.</li>
+</ol>
+
+<h4>Client Utilities change</h4>
+<ol>
+<li><!-- 63089 -->A new O Series Client Utilities script for the On-Demand environment  enables you to create a Data Extract report and download it to your local client location. Before running this script, you must  set up a Data Extract filter in O Series. To run the <span class="Code">runDataExtract</span> script, enter one of the following in the command line:</li>
+  <ul>
+    <li>For Windows systems, type <span class="Code">runDataExtract.bat -u <i>userName</i> -p <i>password</i> -n <i>extractName</i>
+      -l <i>localFileName</i></span></li>
+    <li>For UNIX systems, type <span class="Code">runDataExtract.sh -u <i>userName</i> -p <i>password</i> -n <i>extractName</i> -l <i>localFileName</i></span></li>
+    </ul>
+    
+    where all parameters are required and the  values are:
+    <p></p>
+    <table width="371" border="1">
+        <tr>
+          <th width="127" class="TableHeading" scope="col"><div align="center">Parameter</div></th>
+          <th width="228" class="TableHeading" scope="col">Value </th>
+        </tr>
+        <tr>
+          <td><div align="left">userName</div></td>
+          <td><div align="left">Your O Series user name</div></td>
+        </tr>
+        <tr>
+          <td><div align="left">password</div></td>
+          <td><div align="left">Your O Series password</div></td>
+        </tr>
+        <tr>
+          <td><div align="left">extractName</div></td>
+          <td><div align="left">The name of the Data Extract filter you created in O Series</div></td>
+        </tr>
+        <tr>
+          <td><div align="left">localFileName</div></td>
+          <td><div align="left">The name assigned to the downloaded Data Extract results file. The localFileName can be an absolute path.  If no path is specified the file is downloaded to the oseries-client-utilities/bin directory.</div></td>
+        </tr>
+        </table>
+    
+<p></ol>
+
+<h4>Retail Tax Extract (RTE) change</h4>
+<ol>
+<li><!-- 61790 -->RTE now consistently completes successfully when generating brackets. This change fixes the issue where RTE occasionally tried to generate duplicate brackets when it encountered a taxability change on the start date of the RTE execution's date range.</li>
+</ol>
+
+<h4>Retail Local Indirect Tax Engine (LITE) change</h4>
+<ol>
+<li>All changes listed in the "Calculation Engine changes" section above also apply to Retail LITE deployments.</li>
+</ol>
+
+<h4>Configuration parameter changes</h4>
+<ol>
+<li>The following parameters in the vertex.cfg file are no longer valid. The VAT lookup cache is now always enabled.</li>
+<ul>
+<li><span class="Code">taxgis.jurisdictionfinder.VATLookupCache</span></li>
+<li><span class="Code">taxgis.jurisdictionfinder.VATLookupCache_XXX</span></li>
+</ul>
+<li>The <span class="Code">batch.client.activityThreads</span> parameter has been removed from the vertex.cfg file. Thread count for instances that run BCI from Vertex Central is now controlled using the <span class="Code">batch.client.threadCount</span> parameter in the vertex.cfg file.</li>
+</ol>
+
+<h3>Change in 6.0 SR7.2</h3>
+
+<h4>Tax Setup change</h4>
+<ol>
+<li><!-- 61102 -->A display issue with 6.0 SR7.1, where selected information was not visible in the Taxability Categories, Certificates, and Forms functions, has been resolved. The taxability category description now displays for the highlighted category in the Taxability Categories window and the Add Taxability Mapping window. Complete certificate and form information now display in the respective search results and details windows.</li>
+</ol>
+
+<h3>Changes in 6.0 SR7.1</h3>
+
+<h4>Calculation Engine changes</h4>
+<ol>
+<li><!-- 60545 -->An issue where the tps.common.domain.TpsJurisdictionFinderOptionsMaximumTaxAreas parameter did not override some TaxGIS configuration parameters has been resolved, and the override now works as intended.</li>
+<li><!-- 60557 -->An issue with rounding in the Florida bracket tax calculation  has been resolved, and combined rate brackets and line item taxes are now calculated correctly.</li>
+<li><!-- 60604 -->Transactions with a California destination address, but no physical origin address specified, now compute taxes without causing a null pointer exception error.</li>
+</ol>
+
+<h4>My Enterprise change</h4>
+<ol>
+<li><!-- 60641 -->Certificates with user-defined Reason Codes now import properly, and the Reason Codes display on the certificates after import.</li>
+</ol>
+
+<h4>Tax Setup changes</h4>
+<ol>
+<li><!-- 60929 -->An issue where an error occurred when attempting to  view taxability analysis or map to categories under the Manufacturing or Qualifying Conditions branches of the category tree has been resolved.</li>
+<li><!-- 61368 -->The cache now refreshes automatically when changes are made to allocation tables. This change corrects an issue where the cache was not refreshed  after allocation table changes and bouncing the server was required to apply updates to the table.</li>
+</ol>
+
+<h4>Reporting change</h4>
+<ol>
+<li><!-- 61629 -->The Data Extract Transaction Detail report now displays all line items, including those that do not include tax details.</li>
+</ol>
+
+<h4>System change</h4>
+<ol>
+<li><!-- 61050 -->O Series users with the Master Administrator role can now run the Summary Data Update activity to update reporting summary data for all partitions.</li>
+</ol>
+
+<h4>Retail Tax Extract (RTE) change</h4>
+<ol>
+<li><!-- 60345 -->In RTE, when a business location has an address for an expired 9-digit postal code, the process  now attempts to find a valid tax area ID using the 5-digit postal code. This change corrects an error that occurred when attempting to edit a Taxpayer having a business location with an expired postal code.</li>
+</ol>
+
+<h4>Retail Local Indirect Tax Engine (LITE) changes</h4>
+<ol>
+<li>All changes listed in the "Calculation Engine changes" section above also apply to Retail LITE deployments.</li>
+
+<li><!-- 60861 -->The Tax Engine Extract status file  now includes the correct data update number  for deployments where data updates prior to version 100 have been loaded. </li>
+</ol>
+
+<h3>Changes in 6.0 SR7</h3>
+<h4>Calculation Engine changes</h4>
+<ol>
+     
+<li><!-- 53909 -->For O Series setups where some customers and/or vendors have the same codes as taxpayers, the Calculation Engine now uses only the taxpayer registration information to determine taxability. This resolves an issue where the Calculation Engine incorrectly used the customer or vendor registration information to determine taxability. </li>
+<li><!-- 51106 --> An invoice-level, U.S. Max Tax tier rule  now processes correctly   when the first tier is nontaxable/exempt, the second tier is taxable, and the <b>Tax all at top level</b> option is turned off. The rate is now applied separately for each tier.</li>
+<li><!-- 53833 -->Accrual transactions, in which both the parent line item and child line item have a vendor-charged tax, are no longer adding the child line item's tax to the parent line item's tax. </li>
+<li><!-- 54002 -->An issue where imposition-specific exempt amount overrides were not processed has been resolved. If the amount associated with the override is 100 percent of the taxable basis, the tax is also completely exempt. If the amount associated with the override is partially taxable, then flat fees and quantity-based taxes fully apply.  </li>
+<li><!-- 57757 --> An issue where a higher-level jurisdiction Basis rule overrode a lower-level jurisdiction Basis rule has been resolved. A higher-level jurisdiction Basis rule is now only applied   to a lower-level jurisdiction if the lower level does not have its own Basis   rule.  A user-defined lower-level rule  takes precedence over a Vertex-supplied lower-level rule.</li>
+<li><!-- 50314 -->An issue where tax was not calculated correctly on a tax-inclusive line item having an embedded freight amount has been resolved. </li>
+<li><!-- 50318 -->For an apportioned, tax-inclusive freight line item,  the derived extended amount plus the tax amount now match the input total price. </li>
+<li><!-- 58679 -->In Distribute Tax  transactions, the Calculation Engine now correctly calculates the filing tax amount by multiplying  the input tax amount by the filing currency conversion rate. Previously, O  Series calculated the filing tax amount in the filing currency, but did not  include the input tax amount in the calculation. </li>
+<li><!-- 55055 -->For transactions that involve filing currency conversion and an allocation rule, the issue that caused a null pointer exception error has been resolved. </li>
+<li>The Calculation Engine now returns correct tax percentages and amounts for the U.S. state of Alabama sales tax holiday county-level rules that have conditional jurisdictions and defer to state-level tiered rules with taxable tiers that use the standard rate. </li>
+<li><!-- 52866 -->An issue where nontaxable transactions with a price of $0 in the U.S. state of Texas were failing has been resolved. </li>
+<li><!-- 51352 --> An issue where a nontaxable rule in the U.S. state of Iowa returned a taxable result for a $0 extended price has been resolved.</li>
+<li><!-- 49463 -->To reduce the possibility of overcollecting Value-Added Tax (VAT) because of rounding, rounding adjustments are now made at the invoice level to account for tax-inclusive line items. </li>
+<li><!-- 50305 -->The correct tax registrations are now returned consistently in the calculation response when both country-level input tax registrations and state-level input tax registrations are included in a calculation request. </li>
+<li><!-- 53317 --> An issue for zero-rated, taxable, Intra-EU transactions, where there is no Buyer Registration ID in the output, has been resolved. For Intra-EU transactions where the TaxResultType is Taxable, the Output Notice specifies Intra-EU, Zero Rate, and No Tax Responsibility conclusions, and there is no Buyer Registration ID in the Destination country, the Calculation Engine sets the Buyer Registration ID to the first Customer Registration ID that it finds when searching alphabetically by EU country name.</li>
+<li><!-- 58364 -->For Input Value-Added Tax (VAT) transactions where a taxpayer-level recoverable  percent is set up, the Calculation Engine now allows a transactional  recoverable percent override at the line item level. This logic applies both to  Purchase Order events where <strong>Calculate  Vendor Tax</strong> is selected and to Evaluated Receipt Settlement (ERS) events  where <strong>Calculate Self-Accrual</strong> is  selected. Previously, the recoverable percent was incorrectly set to 0 (zero)  in the XML response message when there was both a taxpayer-level recoverable percent  and a transaction-level recoverable percent in a Purchase Order event or ERS  event.  </li>  
+<li><!-- 57035 --> Recoverable Percent values are now rounded to six decimal places.</li>      
+<li><!-- 55472 -->Filing Currency Conversion Rates are now rounded to six decimal places.</li>
+<li><!-- 58534 -->Transactions that include tax calculations from both the buyer and seller perspective are now rounding amounts correctly based on the currency unit for the transaction. For example, Purchase Order amounts that are reported in Hungarian currency (HUF) are now truncated to a  whole number. Previously, these amounts included decimal values. </li>
+<li><!-- 55643 --> An issue with a leasing calculation involving more than one situs location, where a district tax was calculated based on the extended amount rather than asset cost, has been resolved. The calculation logic has been modified to apply the parent jurisdiction tax basis rule to all lower jurisdictions when there are multiple situs locations.</li>
+<li><!-- 56181 --> An issue where the cost element was not returned in the XML response message when the cost was $0 has been resolved.</li>
+<li><!-- 55549 --> The implementation of internal comparison functions has been corrected to prevent failures in Java 7.</li>
+</ol>
+
+<h4>My Enterprise changes</h4>
+<ol>
+<li><!-- 54069 --> Performance of letter batch processing has been improved.</li>
+<li><!-- 47880 -->An issue where the <b>Validate</b> button had to be clicked twice to validate a certificate has been resolved. If a certificate number and format are valid for the specified jurisdiction, Exemption Certificate Manager now assigns a status of Valid to the certificate the first time you click <b>Validate</b>.</li>
+<li><!-- 54337 -->An issue where a Taxpayer Location could not be deleted has been resolved. </li>
+<li><!-- 58985 -->The system behavior when adding a business location to an existing Taxpayer &#8211 to set the Physical Presence indicator and force a state-wide override that assumes physical locations in every jurisdiction &#8211 has changed. After editing a Taxpayer to add a business location, the Physical Presence indicator no longer automatically applies on the state level. Physical presence is assumed only in  the  jurisdiction for the business location that was added for the Taxpayer.</li>
+<li><!-- 50535 -->An issue when viewing registrations, where the filing currency for the first jurisdiction displayed as USD, has been resolved. </li>
+<li><!-- 59305 -->O Series now supports certificate image files in Tagged Image File Format that have either a .TIF extension or a .TIFF extension. Previously, only files with the .TIFF extension were recognized.</li>
+
+</ol>
+
+<h4>Tax Setup changes</h4>
+<ol>
+<li><!-- 51095 -->To accommodate U.S. Max Tax scenarios that apply across multiple taxability categories, the setup for Calculation rules and Basis rules has been enhanced to allow selection of multiple taxability categories both from within the same branch of the taxability category tree as well as from different branches of the taxability category tree. (Previously, O Series required that taxability categories for Max Tax rules be selected from different branches of the taxability category tree.) </li>
+<li><!-- 52948 --> When editing a user-defined imposition, the <b>Jurisdiction</b> box now reflects the specific jurisdictions for the <b>Include in Tax Base</b> and <b>Include in Imposition</b> parameters.</li>
+<li><!-- 58276 -->When doing a Taxability Analysis in Procurement, date-based semi-automatic rules no longer display. </li>
+<li>U.S. state of <!-- 55950 -->Tennessee county freight charges now inherit the apportionment rules that are applied at the state level. </li>
+<li><!-- 56933 --> Based on the selected jurisdictions, the appropriate Canadian impositions are now available for the <b>Include in Tax Base</b> and <b>Include in Imposition</b> parameters when creating user-defined impositions and tax rules.</li>
+  <li><!-- 52988 -->A Tax Assist rule that reads a participant-level item now references the value inherited from the invoice level, unless that value is overriden by the line item. This change affects Tax Assist rules for the seller, buyer, customer, and vendor participants. Participant-level items include company code, division code, department code, product class code, exemption certificate number, and   exemption certificate reason code. </li>
+  <li><!-- 55690 -->An issue where a pre-calculation Tax Assist rule fired for a Purchase Order and then posted to the Journal, even though the conditions for the rule were not met, has been resolved. </li>
+  <li><!-- 58398 -->An issue where Tax Assist rules incorrectly fired for transactions that calculate tax from both the buyer and seller perspectives has been resolved. </li>
+  <li><!-- 58613 -->The administrativeOrigin.currency parameter is now available as an IF condition when building a Tax Assist rule.</li>
+  <li><!-- 59178 -->Performance has improved when viewing Tax Assist rules with many conditions. This improvement resolves an issue where the screen became blank when attempting to view or edit a Tax Assist rule.</li>
+</ol>
+
+<h4>Tools changes</h4>
+<ol>
+<li><!-- 52949 -->Transaction Tester now correctly displays basis rule information that applies to a transaction in the View Basis Rule window. </li>
+<li><!-- 58297 -->The ESS Registration Number is now included with the line item tax in the Transaction Tester XML response message.</li>
+<li><!-- 53926 -->An issue where Rate Lookup  showed rates inconsistent with those for the system date has been resolved. </li>
+</ol>
+
+<h4>Reporting changes</h4>
+<ol>
+<li><!-- 51048 -->In the Invoice Tax Detail Report, the Document Number field has been expanded to 35 characters.</li>
+<li><!-- 49641 -->For transactions having multiple line items but different transaction dates, the Invoice Tax Detail Report now lists only the specific gross and tax amounts that pertain to each date. The previous behavior of listing the entire invoice gross and tax amounts for each date resulted in incorrect totals. </li>
+<li><!-- 49939 -->The Sales Tax Holiday Report now correctly lists only taxability categories that are subject to tax holidays.</li>
+<li><!-- 54660 -->An issue where the Taxability Mapping template in Data Extract reported expired conditional mapping rules has been resolved. Expired rules are no longer reported.</li>
+<li><!-- 57185 -->The Start Date and End Date fields in the Certificates Data Extract template now correctly show the start and end dates for the Certificate record. Previously, these fields showed  dates for the jurisdiction Certificate Coverage records, which can change independently of the certificate start date and end date.  The template has been modified to include new fields for Coverage Start Date and Coverage End Date,  which  display effective dates for the jurisdiction Certificate Coverage records.  </li>
+<li><!-- 57575 -->The Taxability Mapping template in Data Extract no longer creates duplicate records when reporting on non-conditional mappings. </li>
+<li><!-- 59037 -->An issue with Data Extract, where  an intermittent error occurred when attempting to view a file after running a Data Extract report,   has been resolved.<br />
+</li>
+<li><!-- 54345 -->An issue where the VATDetail View in the Reporting Database contained an incorrect join to Flexible Field tables has been resolved. </li>
+</ol>
+
+<h4>System changes</h4>
+<ol>
+<li><!-- 55473 -->An issue where a Reporting Purge executed some queries multiple times has been resolved.</li>
+<li><!-- 57810 -->An issue where a Tax Journal Export failed because of a tilde (~) in a certificate number has been resolved. The export no longer fails if it encounters a tilde in the Journal data.</li>
+<li><!-- 52911 -->When viewing or editing a Tax Journal Purge filter, the value for the <b>Purge data posted prior to</b> option now correctly displays. </li>
+<li><!-- 52278 -->An issue where Tax Data Import allowed duplicate business location codes to be imported has been resolved. If an import file contains duplicate codes, the Tax Data Import logs an error message to the report. </li>
+<li><!-- 53466 -->An issue where vendor registration records in a Tax Data Export included Registration ID Code and Registration Type has been resolved. </li>
+<li>An issue where a Tax Data Export resulted in errors and missing Taxpayer information has been resolved. This error occurred when one Taxpayer was selected for export in a system that had more than one Taxpayer. As part of the resolution for this issue, the <b>Taxpayer</b> field is no longer available on the Tax Data Export window for users with a Master Administrator role.</li>
+<li><!-- 57748 -->For a user-defined rule applied to a jurisdiction below the state level, the Taxability Category now persists through the export process and the subsequent import to a different partition.</li>
+</ol>
+
+<h4>Miscellaneous change</h4>
+<ol>
+<li><!-- 52063 -->An issue where users could not reset passwords and were locked out of the system after one unsuccessful login attempt has been resolved. Users can now attempt logins three times after an unsuccessful attempt before the system locks and requires administrator intervention. </li>
+</ol>
+
+<h4>Configuration parameter changes</h4>
+<ol>
+<li><!-- 50346 -->For an issue with apportionment where child line items of a nontaxable parent that is a service were  taxed, a configuration parameter has been added. This parameter, <span class="Code">com.vertexinc.tps.apportionment.Apportioner.includeServicesInApportionment</span>, specifies whether or not to include services in apportionment. The default value of <span class="Code">false</span> does not include services in apportionment, while a value of <span class="Code">true</span> includes services in apportionment calculations.</li>
+<li><!-- 58872 -->Due to an error encountered when a BCI  transaction attempted to distribute tax for delivery fees for a nontaxable line  item, the <span class="Code">tps.common.domain.force_distributetax_on_failure.supplies</span> parameter has been modified. This parameter now applies to  apportionment transactions so that tax is distributed for apportioned amounts. </li>
+<li><!-- 54719 -->An error that occurred when applying a Service Release patch, where back slashes (\) were being stripped from vertex.cfg parameter values, has been resolved.</li> 
+</ol>
+
+<h4>Supported platforms</h4>
+<ol>
+<li><!-- 53277 -->Vertex has added support for the Windows 8 operating system. </li>
+<li><!-- 53276 -->Vertex has added support for Microsoft Server 2012. </li>
+<li><!-- 56308 -->Vertex has added support for Microsoft Internet Explorer 10. </li>
+</ol>
+
+<h4>Web Services change</h4>
+<ol>
+<li><!-- 55572 -->An issue that caused general Web Services interruptions and resulted in an ArrayIndexOutOfBoundsError being returned in the SOAP fault has been resolved. </li></ol>
+
+<h4>Retail Local Indirect Tax Engine (LITE) changes</h4>
+<ol>
+<li>All changes listed in the "Calculation Engine changes" section above also apply to Retail LITE deployments.</li>
+</ol>
+
+<h4>Retail Tax Extract (RTE) changes</h4>
+<ol>
+<li><!-- 53017 -->RTE now adds a warning in the Activity Log when no repeat pattern in penny tax differences is found while building a bracket schedule. In this situation, the RTE activity has the status <span class="Code">Completed with Warnings</span> and a Point of Service (POS) system cannot use the bracket schedule. </li>
+<li><!-- 59155 -->An issue where RTE failed to generate a database because of multiple records for a business location code has been resolved. When multiple records for a business location code exist in an the database, fields from the record with the most recent Effective Date are  used in the extract.<br />
+</li>
+<li><!-- 53099 -->RTE now handles the European Union trade block jurisdictions. Trade block jurisdictions  use the value TRADE BLOCK for the DB field RTEJurisdiction.jurTypeSetName. </li>
+<li><!-- 55738 -->To optimize RTE performance, certificate modification dates are no longer included as significant dates when RTE runs trial calculations during an extract. </li>
+<li><!-- 51007 -->The Include Customer Data section of the Retail Tax Extract screen now works as expected. If both the <b>Customers</b> and <b>Customer Classes</b> check boxes are cleared, the RTECustomerExemption, RTECertificate, and RTECertificateClass tables are empty. </li>
+<li><!-- 57984 -->For transactions with multiple impositions, the TaxGroupRule element now only includes the imposition that matches the related RTETaxRule record in the RTE database.</li>
+<li><!-- 52434 -->An issue with combined rate  bracket rules, where the Calculation Engine incorrectly applied an extra penny difference to the U.S. state of Virginia state taxes for meals, has been resolved.</li>
+<li><!-- 55061 -->For Canadian impositions that include a fee  in the taxable base for the Goods and Services Tax (GST) or Provincial Sales Tax (PST), an issue where Retail Tax Extract (RTE) sometimes incorrectly set the compound order number in the RTETaxRule table for impositions that should not have been included in the basis has been resolved. </li>
+<li><!-- 57694 -->While  Certificate Number is not a required field for certificates in O Series, it is a required field in RTE. RTE has been modified to write the string value &quot;NULL&quot; to the certificateIdCode column in the RTECertificate table for certificates that do not specify a Certificate Number. Prior to this release, RTE failed  if a Certificate Number was not specified for a certificate.</li>
+<li><!-- 57685 -->An issue with  RTE, where deleted certificates were incorrectly  written to the RTE database, has been resolved. </li>   
+<li><!-- 52278 --> An issue where Tax Data Import allowed duplicate business location codes to be imported has been resolved. If an import file contains duplicate business location codes, Tax Data Import writes an error message to the Activity Log.</li>
+<li><!-- 57516 -->An issue with the RTE Generate Database Export option, where amount fields (such as the tax amount) were not being written to the export file, has been resolved. </li>
+</ol>
+
+<h4>Batch Client Interface (BCI) changes</h4>
+<ol>
+<li><!-- 50700, 51593 -->BCI performance has been improved by only initializing the Calculation Engine once when running multiple batches. </li>
+<li><!-- 53132 -->BCI has been enhanced to improve performance for customers using multiple threads.</li>
+<li><!-- 53021 -->BCI can now use the Business Location field to identify the destination address. (53021) </li>
+<li><!-- 52596 -->BCI now sets Evaluated Receipts Settlement (ERS) transaction fields correctly, ensuring correct tax calculations. </li>
+<li><!-- 56546 -->BCI now checks for the Customer Code,  Customer Class, or Customer Registration Number to set the customer registration information. </li>
+<li><!-- 56544 -->BCI default values are now correctly set when BCI is run through the web service.  If any required fields are missing BCI returns a "completed with failure" message and logs a null pointer error. </li>
+<li><!-- 57216 -->BCI has been modified to properly record certain types of exceptions, including Null Pointer Exceptions, when processing failed transactions. </li>
+
+</ol>
+<h4>O Series documentation updated for this release</h4>
+The following Vertex Indirect Tax O Series 6.0 documents have been updated for 6.0 SR7:
+<ul>
+<li>Vertex Central Help</li>
+<li>User's Guide</li>
+<li>Hardware and Software Requirements</li>
+<li>Installation Guide</li>
+<li>Upgrade Guide (for 4.1 and 5.0 customers upgrading to 6.0)</li>
+<li>Configuration File Parameters Reference Guide</li>
+<li>ECM Configuration File Parameters Reference Guide</li>
+<li>Tax Data File Formats Handbook</li>
+<li>Batch Client Interface Integration Guide</li>
+<li>Retail Installation and Administration Guide</li>
+<li>Retail Getting Started Guide</li>
+<li>On-Demand Getting Started Guide</li>
+<li>On-Demand Help</li>
+</ul>
+
+<h3>Changes in 6.0 SR6.5</h3>
+<h4>Calculation Engine changes</h4>
+<ol>
+<li><!-- 53942 -->An issue where imposition-specific exempt amount overrides were not processed has been resolved. If the amount associated with the override is 100 percent of the taxable basis, the tax is also completely exempt. If the amount associated with the override is partially taxable, then flat fees and quantity-based taxes fully apply.</li>
+
+<li><!-- 57755 -->An issue where a higher-level jurisdiction basis rule overrode a lower-level jurisdiction basis rule has been resolved. A <span lang="en" xml:lang="en"> higher-level jurisdiction basis rule is now only applied   to a lower-level jurisdiction if the lower level does not have its own basis   rule.  A user-defined lower-level rule  takes precedence over a Vertex-supplied lower-level rule. </span></li>
+</ol>
+
+<h4>Data Extract change</h4>
+<ol>
+<li><!-- 57460 -->The Start Date and End Date fields in the Certificates Data Extract template now correctly show the start and end dates for the Certificate record, rather than dates for the jurisdiction Certificate Coverage records, which can change independently of the certificate start date and end date.  The template has been modified to include new fields for Coverage Start Date and Coverage End Date,  which  display effective dates for the jurisdiction Certificate Coverage records.  </li>
+</ol>
+
+<h4>Batch Client Interface (BCI) change</h4>
+<ol>
+<li><!-- 57215 -->BCI has been modified to properly record certain types of exceptions, including Null Pointer Exceptions, when processing failed transactions.  </li>
+</ol>
+
+<h4>Retail Local Indirect Tax Engine (LITE) changes</h4>
+<ol>
+<li>All changes listed in the "Calculation Engine changes" section above also apply to Retail LITE deployments.</li>
+</ol>
+
+<h4>Retail Tax Extract (RTE) changes</h4>
+<ol>
+<li><!-- 57229 -->An issue with the RTE Generate Database Export option, where amount fields (such as the tax amount) were not being written to the export file, has been resolved.</li>
+<li><!-- 57232 -->An issue with  RTE, where deleted certificates were incorrectly  written to the RTE database, has been resolved.</li>
+<li><!-- 56793 -->While  Certificate Number is not a required field for certificates in O Series, it is a required field in RTE. RTE has been modified to write the string value &quot;NULL&quot; to the certificateIdCode column in the RTECertificate table for certificates that do not specify a Certificate Number. Prior to this release, RTE failed  if a Certificate Number was not specified for a certificate.  </li>
+</ol>
+
+<h3>Changes in 6.0 SR6.4</h3>
+<h4>Calculation Engine changes</h4>
+<ol>
+<li>Tennessee county freight charges now inherit the apportionment rules that are applied at the state level.</li>
+</ol>
+<h4>Reporting change</h4>
+<ol>
+<li> The Certificates template in Data Extract now shows the correct value for the Reason Code field.</li>
+<li><!-- 54335 -->An issue where a Reporting purge executed some queries multiple times has been resolved.</li></ol>
+<h4>Retail Local Indirect Tax Engine (LITE) changes</h4>
+<ol>
+<li>All changes listed in the "Calculation Engine changes" section above also apply to Retail LITE deployments.</li></ol>
+<h3>Changes in 6.0 SR6.3</h3>
+<h4>Calculation Engine changes</h4>
+<ol>
+  <li>
+    <!-- 54963 -->
+    An issue where the taxpayer for a transaction was incorrectly identified has been resolved. This issue occurred when there were different Taxpayer codes defined on the line item than on the transaction. For example, an initially invalid transaction-level Taxpayer was corrected on the line item level using a Tax Assist rule.<br />
+  </li>
+  <li>
+    <!-- 54939 -->
+    For transactions that involve filing currency conversion and an allocation rule, the issue that caused a null pointer exception error has been resolved.</li>
+</ol>
+<h4>RTE change</h4>
+<ol>
+  <li>
+    <!-- 55052 -->
+    For Canadian impositions that include a fee  in the taxable base for the Goods and Services Tax (GST) or Provincial Sales Tax (PST), an issue where Retail Tax Extract (RTE) sometimes incorrectly set the compound order number in the RTETaxRule table for impositions that should not have been included in the basis has been resolved. </li>
+</ol>
+<h3>Changes in 6.0 SR6.2</h3>
+<h4>Calculation Engine changes</h4>
+<ol>
+  <li>
+    <!-- 54353 -->
+    An issue with the Federal Medical Devices Excise Tax  &#8211 where a NO_TAX result is returned for all U.S. transactions for which the Taxpayer is not registered in the U.S. &#8211 has been resolved, and the expected tax result is returned. The Federal Medical Devices Excise Tax  goes into effect on January 1, 2013. If the 6.0 SR6.3 patch is not applied, O Series clients can register their Taxpayers in the U.S. to prevent the NO_TAX result from being returned. </li>
+  <li>
+    <!-- 50964 -->
+    Accrual transactions, in which both the parent line and child line  have a vendor-charged tax at the line-item level, are no longer adding the child line item's tax to   the parent line item's tax twice, which resulted in an over application of tax. </li>
+  <li>When looking up taxpayer registration information, the Calculation Engine now looks only at taxpayer records. Previously, it also looked at customer and vendor records, creating a situation where it incorrectly used a customer or vendor record to determine taxability, <i>if</i> that customer or vendor had the same code as the taxpayer. 
+    <!-- 53911 -->
+   The Calculation Engine now uses only the taxpayer registration information to determine taxability.</li>
+</ol>
+<h4>My Enterprise change</h4>
+<ol>
+  <li>
+    <!-- 54335 -->
+    An issue where an incorrect Taxpayer location was deleted when the vertical scroll position was not at the top of the grid has been resolved. </li>
+</ol>
+<h4>Tax Assist change</h4>
+<ol>
+  <li>A Tax Assist rule that looks for a participant-level item, such as a buyer's customer code, now references the value   at the transaction level, unless that value is overriden on the line-item level. Previously, when looking for the participant-level item, the Calculation Engine pulled the value from the line item before checking for a transaction-level value.</li>
+</ol>
+<h4>Batch Client Interface (BCI) change</h4>
+<ol>
+  <li>
+    <!-- 52539 -->
+    Batch Client Interface (BCI) now correctly sets transaction participant fields when processing ERS transactions.</li>
+</ol>
+<h3>Changes in 6.0 SR6.1</h3>
+
+<h4>Calculation Engine changes</h4><ol>
+<li><!-- 50254 -->An issue where tax was not calculated correctly on a tax-inclusive line item having an embedded freight amount has been resolved. When  a parent line item is tax-inclusive and has a child line item for freight, the tax is now calculated only on the freight. </li>
+<li><!-- 50256 -->An issue with an apportioned, tax-inclusive freight line item,  where the derived extended amount plus the tax amount did not match the input total price has been resolved. The extended amount plus the tax amount now match the input total price in these instances.</li>
+<li><!-- 50631 -->The calculation that resolves imposition interdependencies in Brazil now terminates after a  set number of iterations and returns a message. The configuration parameter that defines the maximum number of iterations is <span class="Code">tps.common.domain.Situs.situsLoopExceptionCount</span>. The default is 1,000 iterations.</li>
+<li><!-- 40370 -->Rounding of tax rates in Tax Rules lookup now correctly rounds off the rate to the hundredths place. For example, a rate that displayed at 3.8499999999999996% now displays as 3.85%.</li>
+<li><!-- 50304 -->The correct tax registrations are now returned consistently in the calculation response when both country-level input tax registrations and state-level input tax registrations are included in a calculation request. </li>
+<li><!-- 52867 -->An issue where nontaxable transactions with a price of $0 in Texas were failing has been resolved. </li>
+</ol>
+
+<h4>Batch Client Interface (BCI) changes</h4>
+<ol>
+<li><!-- 51565 -->An issue where the status for transactions in all batches was incorrectly set to Processing in the batch control table has been resolved. (Only transactions in batches with a status of Ready were actually processed.)</li>
+<li>BCI performance when processing a large number of batches has been improved by not restarting the Calculation Engine for each batch.</li>
+</ol>
+<h4>Certificate Management changes</h4>
+<ol>
+<li><!-- 49456 -->An issue with migrating exemption certificates with a large number of images (that would have resulted in a ZIP file larger than 4 GB) from  ECM 3.2 to ECM 6.0 in a 32-bit environment has been resolved.</li>
+</ol>
+
+<h3>Changes in 6.0 SR6</h3>
+<p class="Caution"><strong>Important Reminder</strong>: Vertex maintains a support policy of the current service release plus &quot;one back&quot; for a period of six months after the release of the newest service release. With the release of 6.0 SR6 this is the supported service release level along with 6.0 SR5 (until January 2013) and eligible for maintenance pack support as necessary. For more detail on the service release policy previously announced November 2011 go to <a href="https://my.vertexinc.com/">https://my.vertexinc.com/</a></p>
+<h4>Supported platforms</h4>
+<ol>
+  <li><!-- 27821 -->Vertex has added support for the Google Chrome browser version 18.</li>
+  
+  <li><!-- 46522 -->Vertex has added support for Microsoft SQL Server 2012.</li>
+
+  <li><!-- 46523 -->Vertex has added support for Oracle WebLogic version 12.</li>
+
+  <li><!-- 45816 -->Vertex has added support for JBoss versions 6.0 and 7.1.</li>
+
+
+</ol>
+
+
+<h4>Performance enhancements</h4>
+<ol>
+  
+  <li><!-- 33792, 47485 -->Tax Data Export performance has been improved by only exporting Certificate and Party (Taxpayers, Customers and Vendors) data when it has been altered.</li>
+
+  <li><!-- 45399 -->Performance of Tax Data Import when loading batches of Customer Tax Registrations has been improved.</li>
+  
+  <li><!-- 45904 -->Performance when loading situs data has been improved.</li>
+  
+  <li><!-- 40829 -->Performance when adding a new vendor with a large number of customers has been improved.</li>
+  
+ <li><!-- 42934 -->The amount of time it takes to start up Vertex Central has been improved.</li>
+ 
+ <li><!-- 47180 -->Performance of the Batch Client Interface activity service has been improved.</li>
+
+
+ <li><!-- 33889 -->Vertex O Series now supports database compression for Oracle and SQL Server.</li>
+
+
+
+</ol>
+<h4>Configuration parameter changes</h4>
+<ol>
+  <li><!-- 41937 -->A new configuration parameter,    <span class="Code">com.vertexinc.tps.xml.IncludeResponseTime</span>,	lets you know how much time the Calculation Engine spent on a calculation request. The elapsed calculation time is returned in the XML response to a calculation request. Set this parameter to <span class="Code">True</span> to return the calculation time.</li>
+  
+  <li><!-- 34866 -->The maximum number of database connections set using the <span class="Code">maxconnections</span>  parameter  is now strictly enforced.</li>
+
+  <li><!-- 33850 -->A new configuration parameter, <span class="style4">com.vertexinc.tps.common.domain.dpp.exempt</span>, when set to <span class="style4">True</span>, causes Invoice Request transactions using a direct pay permit certificate to correctly include the gross amount and report them as exempt on sales tax returns.</li>
+  
+  <li><!-- 35848 -->A new configuration parameter, <span class="Code">com.vertexinc.tps.common.importexport.domain.certificateImage.zip.nodirectory</span>, enables you to import certificates to O Series in a directory and subdirectory structure defined in the import file. This parameter helps to expedite the import process when you are importing a large number of certificate image files.</li>
+  
+  <li><!-- 36746 -->A new configuration parameter, <span class="Code"> tps.common.domain.implyMainDivisionRegistrationWithTaxRegistrationOverrides</span>, directs the Calculation Engine to assume that all lower-level jurisdictions within a given country-level registration are either registered (<span class="Code">True</span>) or not registered (<span class="Code">False</span>).</li>
+  
+  <li><!-- 37446 -->Two new configuration parameters, <span class="Code">tps.common.domain.force_distributetax_on_failure.supplies</span> and <span class="Code">tps.common.domain.force_distributetax_on_failure.procurement</span>, control whether or not a Distribute Tax transaction is forced on an Input Total Tax amount when the transaction is actually nontaxable.</li>
+  
+  <li><!-- 38243 -->A new configuration parameter, <span class="Code">common.reports.dir.extCertImageFileLocation</span>, identifies the directory for certificates that are located outside of the O Series directory structure.</li>
+  
+  <li><!-- 38957 -->A new configuration parameter, <span class="Code">com.vertexinc.tps.common.persist.tj.extendedPrice</span>, specifies for a Distribute Tax transaction whether the passed-in extended price of $0 or the calculated extended price  is recorded in the Tax Journal.</li>
+  
+  <li><!-- 39288 -->An option has been added to the <span class="Code">tps.common.domain.TpsJurisdictionFinderOptionsAlternativeRegionTypeLists_XXX</span> parameter to apply an alternative region type list to all countries.</li>
+</ol>
+  
+<h4>Tax Setup changes</h4>
+<ol>
+  <li><!-- 43348 -->An issue where a search for Tax Rule summaries returned no results has been resolved.</li>
+
+
+  <li><!-- 17697 -->An issue where the Tax Rules part of Tax Setup would not permit the creation of tax rules with multiple jurisdictions with a taxable conclusion has been resolved.</li>
+
+
+  <li><!-- 42870 -->
+  An issue where setting an end date  on a Taxpayer Business Location created a new Business Location with an end date before its start date, causing Taxability Manager exports with Business Locations to fail, has been resolved.</li>
+  
+    
+  <li><!-- 33006 -->O Series now displays a warning and prevents a user from building a tax rule using two tax drivers of the same type.</li>
+  
+  <li><!-- 40060 -->For situs rules, O Series now allows only a single jurisdiction to be selected per address type.</li>
+ 
+  <li><!-- 42298 -->When mapping a taxability driver to a category, all applicable conditional rules having a single taxability category are now displayed and available for selection.</li>
+  
+  <li><!-- 39866 -->The Taxability Mapping function has been enhanced to show if a mapping already exists for an entity and enable you to filter entities out of the listing that have already been mapped to a Taxability Category.</li>
+  
+  <li><!-- 44080 -->An issue where users were permitted to create duplicate Taxpayers (having the same name and code but with different internal keys) has been resolved.</li>
+
+
+  <li><!-- 41777 -->
+  Users can now create taxpayers for a Procurement Business Event with Invoice Verification thresholds set to zero.  Users can now also remove Invoice Verification thresholds after they are set.</li>
+
+
+
+  <li><!-- 46694 -->When searching in Tax Rules for Impositions, each imposition type is now displayed only once.</li>
+</ol>
+<h4>My Enterprise changes</h4>
+<ol>
+  <li><!-- 41054 -->VIES Validation has been expanded to validate vendor VAT registration numbers, as well as customer VAT registration numbers.</li>
+</ol>
+<h4>Retail changes</h4>
+
+<ol>
+  <li><!-- 44151 -->The Vertex Retail Tax Extract utility now properly determines the county tax for the U.S. Tennessee state tax is divided into two separate impositions (in support of TN tax holiday processing). The ordering of the separate Tennessee State taxes has been corrected so that the primary tax is first and the single article surcharge is second.</li>
+  
+  <li><!-- 35628 -->When a BusinessLocation is edited and saved the country of the BusinessLocation is populated in both the database BusinessLocation table and the extract.</li>
+</ol>
+<h4>Tax Data Import changes
+</h4>
+<ol>
+   <li><!-- 45420, 45338 -->Issues where Tax Data Imports of Vendor registrations and Customer registrations failed has been resolved.</li>
+   
+   <li><!-- 42282 -->Tax Data Import files containing lookup table records with no result field values can now be successfully imported.</li>
+ </ol>
+<h4>Transaction Tester changes</h4>
+ <ol>
+   
+   <li><!-- 44606 -->An issue where the Transaction Tester selectors for string-type flex fields showed incorrect values has been resolved.</li>
+   
+   <li><!-- 18029 -->Users can now capture logging for a specific transaction run through the Transaction Tester.</li>
+   
+   <li><!-- 42015 -->Transaction Tester has been enhanced to provide situs determination steps in the XML response.</li>
+ 
+ 
+</ol>
+<h4>Rate Lookup Tool changes</h4>
+<ol>
+ 
+  <li><!-- 44762 -->An issue where the Rate Lookup tool was not returning the correct state tax rate for some locations in Louisiana has been resolved.</li>
+
+
+  <li><!-- 41604 -->The Japanese consumption tax is now correctly broken down into national and local impositions to reflect the 4% national levy and 1% regional levy.</li>
+
+
+</ol>
+<h4>Data Extract changes</h4>
+<ol>
+  
+  
+ <li><!-- 45360 -->An issue where a Retail Tax Extract for in-store sales was incorrectly identifying county and city tax rates as state tax rates has been resolved. </li>
+
+
+ <li><!-- 31450 -->Data Extract now includes an Excel output format to generate Excel (.xls) files.</li>
+ 
+ <li><!-- 46183 -->
+  Data Extract now supports relative  date filters.</li>
+
+
+</ol>
+<h4>System changes</h4>
+<ol>
+  <li><!-- 47438 -->
+    The following entries have been added to the activity log:
+    <ul>
+      <li>Adding tax assist rule</li>
+      <li>        Updating tax assist rule</li>
+      <li> Deleting tax assist rule</li>
+      <li>        Adding allocation table</li>
+      <li>        Updating allocation table</li>
+      <li>        Deleting allocation table</li>
+      <li>        Adding lookup table</li>
+      <li>        Updating lookup table</li>
+      <li>        Deleting lookup table</li>
+    </ul>
+  </li>
+</ol>
+<h4>Tax Assist changes</h4>
+<ol>
+  
+  <li><!-- 45421 -->The following fields can now be set in Tax Assist:  
+    <ul>
+      <li>        CalculateVendorTax</li>
+      <li>        InputTaxAmount</li>
+      <li>        InputTaxImpositionType</li>
+      <li>        InputTaxJurisdictionLevel</li>
+      <li>        InputTaxReportedInputRecoverableAmount</li>
+    </ul>
+  </li>
+  
+  <li><!-- 37157 -->An issue where Tax Assist failed to properly create a rule that included freight charges in Distribute Tax transactions has been resolved.</li>
+  
+  
+  
+    
+  <li><!-- 16511 -->A non-functional Add Allocation Conclusion button has been removed from the Add Tax Assist Rule window for Post-Calculation tax rules.  Allocation tables cannot be used with Post-Calculation tax rules.</li>
+  
+  <li><!-- 41319 -->An issue where O Series was incorrectly interpreting an empty literal string as NULL when saving a Tax Assist rule has been resolved.</li>
+</ol>
+<h4>Security enhancements</h4>
+<ol>
+  <li><!-- 43059, 45577, 47609 -->Several aspects of security have been enhanced, including strengthening password validation.      Because SR6 includes security enhancements, Vertex highly recommends applying SR6 to your O Series system as early as possible upon availability. </li>
+  
+  <li><!-- 41267, 41277, 43059 -->Users in the role of Administrator can now trace unsuccessful login attempts.  User IDs that attempt to log in, whether or not they succeed, are recorded in both the system logs and the Security Activity Log.  The User IDs associated with both successful and failed login attempts are displayed in the Summary column of the Security Activity Log.</li>
+
+  <li><!-- 41280 -->An issue where an inactivated user could not be reactivated has been resolved.</li>
+
+
+  <li><!-- 45577 -->Password validation checks now work correctly when changing passwords as well as during initial creation of passwords.</li>
+
+
+  <li><!-- 43037 -->Users set up with a role having 'Users' and 'Roles' access may now create another user and assign it to its own role.</li>
+  
+
+
+</ol>
+<h4>Calculation Engine changes</h4>
+
+<ol>
+  <li><!-- 42127 -->Distribute Tax transactions now return the same results for an Extended Price of zero or no Extended Price supplied.</li>
+  
+   <li><!-- 42255 -->An issue where a State-level basis reduction rule (configured to apply to the selected jurisdiction only) is incorrectly applied to a local jurisdiction level has been resolved.</li>
+
+  <li><!-- 38604 -->An issue where the way Taxpayer lower-level (city, for example) registrations were set affected the taxable status of the Taxpayer has been resolved.</li>
+  
+  <li><!-- 43813 -->Tax-included transactions containing only quantity and unit price in a jurisdiction having MaxTax rules are now correctly calculated, and do not return negative tax amounts.</li>
+   
+   <li><!-- 43840 -->An issue where the extended amount of a Canadian Purchase Order transaction was incorrectly increased has been resolved.</li>
+   
+   <li><!-- 38071 -->An issue where, attempting to override a standard tiered tax rule in Florida by using a Single Rate tax and selecting the "Use Standard Rate" option, fails and uses a rate of 0%, has been resolved.</li>
+   
+   <li><!-- 33850 -->Invoice Request transactions involving a direct pay permit certificate can now be configured to record the gross amount as exempt.</li>
+
+   <li><!-- 46186 -->An issue where a basis rule to accrue U.S. Consumer Use Tax on a sales invoice failed to apply to all local jurisdictions has been resolved.</li>
+   
+  
+   
+   <li><!-- 42788 -->When performing Life of Contract calculations, the total tax can now be both limited and increased.</li>
+   
+   <li><!-- 42831 -->An issue where procurement calculations that included a VendorCode without an associated Vendor treated the vendor as a customer is resolved.</li>
+   
+   <li><!-- 42610 -->Distribute Tax requests for transactions with one parent and one child line item now function correctly, considering only the parent line item total tax.</li>
+   
+  <li><!-- 38957 -->For situations where the extended price in a distribution transaction is zero but the tax is not zero, an option has been added to persist the zero extended price to the Tax Journal.</li>
+   
+   <li><!-- 45393 -->An issue where post-calculation Tax Assist did not return the correct rule when the filing category code was entered has been resolved.</li>
+   
+   <li><!-- 40996 -->An issue where exemption certificates were not being properly applied when no jurisdiction was selected for the certificate has been resolved.</li>
+   
+   <li><!-- 43355 -->For basis rules that include both basis reduction and markup rate calculations, four new options have been added as the basis for calculating tax.</li>
+   
+   <li><!-- 36743 -->An issue where the VAT registrations for the Principality of Liechtenstein were not being recognized has been resolved.</li>
+
+
+   <li><!-- 43602 -->An issue where transactions calculating the Brazil substitution tax were using a reduced basis rule to round incorrectly has been resolved.</li>
+
+
+   <li><!-- 46847 -->The Calculation Engine now correctly differentiates between two tax types in the Canadian province of Quebec, eliminating the possibility of double taxation.</li>
+   
+   <li><!-- 47163 -->An issue where a rounding logic problem caused tax amounts to differ depending on the order of the line items has been resolved.</li>
+
+   <li><!-- 41962 -->When processing a Value Added Tax transaction of a Line Item tax with an Intra EU (European Union) output notice and a NO_TAX tax result type, the calculation engine includes the first Buyer registration found within the EU on the Line Item tax. </li>
+   
+   <li><!-- 46454 -->
+     <!-- 46308 -->
+   Posting dates are now validated before calculations are performed, to ensure that negative tax results are not written to the journal.</li>
+   
+  <li><!-- 46308 -->An issue where tax was being calculated incorrectly because the tax jurisdiction was treated as non-registered after it was modified, has been resolved.</li>
+  
+  <li><!-- 46308 -->The calculation engine now validates posting dates to ensure that invalid values do not get recorded in the database.</li>
+  
+  
+  <li><!-- 37157 -->An issue where a Tax Assist rule that set freight charges caused an infinite loop in Distribute Tax processing has been resolved.</li>
+  
+  
+  <li><!-- 41962 -->Whenever a Line Item Tax has an Intra EU output notice (2) and a tax result type of NO_TAX, the calculation engine now includes the first Buyer registration that exists within the EU on the Line Item Tax, even if the registration is for a different country from the Line Item Tax' Jurisdiction.  </li>
+
+
+  <li><!-- 43547 -->Setting the Apply-to-Selected Jurisdiction flag now functions correctly with a tiered tax rule at the state level.  The local jurisdiction tax rule that has the deferred-to-state flag set does not defer to state in this case.</li>
+
+
+</ol>
+
+
+
+<h4>Certificate Management  changes</h4>
+<ol>
+  <li><!-- 32587, 42174 -->There are new fields available for use in creating a letter template. The new fields include:
+    <ul>
+      
+      
+      <li>User Signature</li>
+      <li>Certificate Number</li>
+      <li>Certificate Expiration Date</li>
+      <li>Customer Field 1 (user defined)</li>
+      <li>Customer field 2 (user defined)</li>
+      </ul>
+    <li><!-- 42714 -->The User Signature image can only be a local image file. </li>
+    
+  <li><!-- 46477 -->An issue where the tax data export ZIP file needed to move certificate images from one partition to another was not available has been resolved.</li> 
+    
+    <li><!-- 47527 -->Customer Records or Taxpayer Records that include only a first name or last name as contact are now handled properly by Letter Batch processing.</li> 
+ 
+  
+    <li><!-- 46184 -->An issue whewre data updates were not loading correctly due to a problem with a file utility has been resolved.</li>
+  
+  
+  <li><!-- 41507 -->Certificates will no longer be valid if the expiration date is earlier than the certificate effective date.</li>
+  
+  <li><!-- 40570 -->An issue where active certificates whose expiration date had been changed after the original date of the certificate were not viewable has been resolved.</li>
+ 
+  <li><!-- 38243 -->Certificates stored outside of the O Series file structure can now be accessed from the Certificates user interface.</li>
+  
+  
+  <li><!-- 44708 -->An issue where certificate images failed to upload via the GUI if the image file name contained two consecutive spaces has been resolved.</li>
+</ol>
+
+<h4>Reporting user interface changes</h4>
+<ol>
+  
+  
+  <li><!-- 33488 -->Data Extract now displays a warning message if a user attempts to run a transaction detail data extract without specifying filter criteria.</li>
+  
+  <li><!-- 34500 -->Data Extract Transaction Summary reports and Transaction Detail reports can now be filtered by  taxpayer names set up in O Series.  Three new fields have been added on which users can filter data extracts.  These fields are:   
+    <ul>
+      <li>Taxpayer Company Name</li>
+      <li>Taxpayer Division Name</li>
+      <li>Taxpayer Department Name</li>
+    </ul>
+  </li>
+</ol>
+<h4>Tools user interface changes</h4>
+<ol>
+  <li><!-- 41604 -->An issue where the Rate Lookup tool was not displaying the Local and National Consumption Tax impositions for Japan has been resolved.</li>
+  
+  <li><!-- 42656 -->An issue where the Post to Journal button in Transaction Tester was available to all users regardless of permissions has been resolved.</li>
+</ol>
+
+<h3>Changes in 6.0 SR5.6</h3>
+
+<h4>Calculation Engine change</h4>
+<ol>
+  <li>An issue with the Federal Medical Devices Excise Tax  &#8211 where a NO_TAX result is returned for all U.S. transactions for which the Taxpayer is not registered in the U.S. &#8211 has been resolved, and the expected tax result is returned. The Federal Medical Devices Excise Tax  goes into effect on January 1, 2013. If the 6.0 SR5.6 patch is not applied, O Series clients can register their Taxpayers in the U.S. to prevent the NO_TAX result from being returned.
+</ol>
+
+<h3>Changes in 6.0 SR5.5</h3>
+
+<h4>Tax Assist change</h4>
+<ol>
+   <li><!-- 48168 -->A Tax Assist rule that reads a participant-level item now references the value inherited from the invoice level, unless that value is overriden by the line item. This change affects Tax Assist rules for the seller, buyer, customer, and vendor participants. Participant-level items include company code, division code, department code, product class code, exemption certificate number, and   exemption certificate reason code.   </li>
+</ol>
+  
+<h3>Changes in 6.0 SR5.4</h3>
+
+<h4>Calculation Engine changes</h4>
+
+<ol>
+   <li><!-- 50205 -->The Calculation Engine now uses significantly less memory  for certain Brazil transactions.</li>
+   <li><!-- 50168 -->An issue where multiple input tax registrations were returned inconsistently in the output has been  resolved so that country-level input tax registrations override state-level input tax registrations.</li>
+</ol>
+<h4>Tax Assist change</h4>
+<ol>
+  <li><!-- 50264 -->An issue where the sorting of Tax Assist parameters caused the failure of a calculation has been resolved.</li>
+</ol>
+  
+<h3>Changes in 6.0 SR5.3</h3>
+
+<p class="Caution"><strong>Support Notice – O Series version 6.0 SR5.3<br />
+  Dear Vertex Subscriber,<br />
+  Vertex has identified a critical issue related to moving records from the Tax Journal database to the Reporting database which could result in data corruption.  This issue impacts only high volume customers who have processed approximately 1 billion line items.  Please plan on patching up to at least 6.0 SR5.3 on the SR5 baseline or to 6.0 SR6 which will be released shortly.<br />
+  <br />
+  Moving to 6.0 SR5.3 does not require data migration and can be accomplished as a patch process.  Customers using Vertex Partner or Custom integrations may continue to use the installed integration.  As a best practice Vertex recommends that a test cycle is completed prior to promoting the latest service release or maintenance pack to a production system.<br />
+  <br />
+  Vertex truly appreciates your business.  If you have any questions, please contact us at 800.281.1900 and select Product Code 4765, or visit myVertex to submit a support inquiry at https://my.vertexinc.com/home</strong><br />
+</p>
+<h4>Tax Assist change</h4>
+<ol>
+  <li><!-- 47937 -->Tax Assist can now check for Asset Movement and Inventory Removal transactions for Procurement Business Events as well as Supplies Business Events.</li>
+</ol>
+<h4>Calculation Engine change</h4>
+<ol>
+  <li>
+    <!-- 46717 -->
+    The Calculation Engine now correctly differentiates between two tax types in the Canadian province of Quebec, eliminating the possibility of double taxation.</li>
+</ol>
+<h4>Performance enhancement</h4>
+ <ol>
+   <li>
+     <!-- 47080 -->
+     Performance of the Batch Client Interface activity service has been improved.</li>
+ </ol>
+ <h4>System change</h4>
+ <ol>
+   <li><!-- 49943 -->An issue where performing a data movement such as Tax Journal export could cause data corruption errors has been resolved.</li>
+ </ol>
+
+<h3>Changes in 6.0 SR5.2</h3>
+<h4>General enhancements</h4>
+<ol>
+  <li><!-- 45903 -->Performance when loading situs data has been improved.</li>
+</ol>
+<h4>Tax Assist changes</h4>
+<ol>
+  <li><!-- 45349 -->The following fields can now be set in Tax Assist:
+    <ul>
+      <li class="Code"> <span class="style3">InputTaxAmount</span></li>
+      <li class="Code"> <span class="style3">InputTaxImpositionType</span></li>
+      <li class="Code"> <span class="style3">InputTaxJurisdictionLevel</span></li>
+      <li class="Code"> <span class="style3">InputTaxReportedInputRecoverableAmount</span></li>
+    </ul>
+  </li>
+</ol>
+<h4>Tax Setup user interface changes</h4>
+<ol>
+  <li>
+    <!-- 45198, 45501 -->
+    When mapping a taxability driver to a category, all applicable conditional rules having a single taxability category are now displayed and available for selection.</li>
+</ol>
+<h4>Calculation Engine changes</h4>
+<ol>
+  <li>
+    <!-- 45392 -->
+    An issue where post-calculation Tax Assist did not return the correct rule when the filing category code was entered has been resolved.</li>
+  <li>
+    <!-- 45091 -->
+    The calculation engine now correctly adjusts distribution tax differences when there is only one line item tax that can be adjusted.</li>
+  <li>
+    <!-- 45603 -->
+    An issue where transactions that included addresses not registered to a Taxpayer or Vendor failed, has been resolved.</li>
+</ol>
+<h4>TM Import changes</h4>
+<ol>
+  <li>
+    <!-- 45323, 45571 -->
+    An issue where TM imports of Vendor registrations and Customer registrations failed has been resolved.</li>
+</ol>
+<h4>Data Extract changes</h4>
+<ol>
+  <li>
+    <!-- 45359 -->
+    An issue where a Retail Tax Extract for in-store sales was incorrectly identifying county and city tax rates as state tax rates has been resolved. </li>
+</ol>
+<h4>Tax Area Lookup changes</h4>
+<ol>
+  <li>
+    <!-- 41967 -->
+    Numbers and repeating characters included in city names are now retained to improve the accuracy of Tax Area Lookup.</li>
+</ol>
+<h3>&nbsp;</h3>
+<h3>Changes in 6.0 SR5.1</h3>
+<h4>General enhancements</h4>
+<ol>
+  <li>
+    <!-- 41914 -->
+    The amount of time it takes to start Vertex Central has been improved.</li>
+</ol>
+<h4>Tax Assist user interface changes</h4>
+<ol>
+  <li>
+    <!-- 41961 -->
+    TM Import files containing lookup table records with no result field values can now be successfully imported.</li>
+</ol>
+<h4>Tax Setup user interface changes</h4>
+<ol>
+  <li>
+    <!-- 42145 -->
+    When mapping a taxability driver to a category, all applicable conditional rules having a single taxability category are now displayed and available for selection.</li>
+  <li>
+    <!-- 43508 -->
+    An issue where a search for Tax Rule summaries returned no results has been resolved.</li>
+</ol>
+<h4>Retail changes</h4>
+<p align="left" class="Caution">For Indirect Tax for Retail accounts using  Retail Tax Extract (RTE) or  Rate and Rule Extract (RARE) utilities, applying SR5.1 is necessary to achieve correct tax results in Tennessee. </p>
+<ol>
+  <li>
+    <!-- 43058 -->
+    Retail Tax Extract now chooses correctly between two tax rules when calculating tax during a Tennessee tax holiday period.</li>
+  <li>
+    <!-- 42789 -->
+    An issue where the Retail Tax Extract generated data which did not include the country portion of the business location has been resolved.</li>
+</ol>
+<h4>Calculation Engine changes</h4>
+<ol>
+  <li>
+    <!-- 42085 -->
+    An issue where a basis reduction rule is incorrectly applied to both local and state jurisdiction levels has been resolved.</li>
+  <li>
+    <!-- 42909 -->
+    Distribute Tax requests for transactions with one Parent and one Child Line Item now function correctly, considering only the parent line item total tax.</li>
+  <li>
+    <!-- 43300 -->
+    When performing Life of Contract calculations the total tax can now be both limited and increased.</li>
+  <li>
+    <!-- 43130 -->
+    An issue where the extended amount of a Canadian Purchase Order transaction was incorrectly increased has been resolved.</li>
+</ol>
+<p>&nbsp;</p>
+<h3>Changes in 6.0 SR5</h3>
+<h4>Supported platforms</h4>
+        <ol>
+          <li><!-- 31456 -->Vertex has added support for Mozilla Firefox versions 4, 5, 6, 7, and 8.</li>
+            
+          <li><!-- 27820 -->Vertex has added support for Microsoft Internet Explorer version 9.</li>
+            
+            <li><!-- 40636 -->Vertex has added support for Adobe Flash Player version 11.</li>
+          
+          <li><!-- 28596 -->Vertex has added support for the IBM AIX Operating System, version 7.1.</li>
+                    
+          <li><!-- 34565 -->Vertex has added support for Java 7.</li>
+          
+          <li><!-- 37422 -->Vertex has added support for IBM WebSphere version 8.</li>
+          
+          <li><!-- 17690 -->Vertex has added support for NetWeaver 7.2.</li>
+</ol>
+
+<h4>General enhancements</h4>
+    <ol>
+
+        <li><!-- 31901 -->Calculation performance has been improved for users with large numbers of business locations.</li>
+        
+        <li><!-- 34659 -->Calculation performance has been improved for transactions in Brazil.</li>
+        
+        <li><!-- 38017 -->Viewing and editing user-defined tax rules is much faster for customers with large numbers of Vendors in their database.</li>
+        
+        <li><!-- 33768 -->Performance has been improved for high transaction volume customers by streamlining the process of determining if a transaction exists.</li>
+        
+        <li><!-- 30145 -->The JMX monitoring tool has been made thread safe, to improve monitoring accuracy when used with O Series.</li>
+        
+        <li><!-- 35706 -->If you are writing an integration to O Series 6.0 Web Services, and you want to address error handling activities, refer to the ExceptionTypes in the javadoc in the <span class="Code">VertexHome/doc/ExternalInterface/docs</span> directory. You can key off the ExceptionTypes to indicate how errors are managed.</li>
+      </ol>
+
+<h4>Security enhancements</h4>
+    <ol>     
+      <li><!-- 36641 -->Several aspects of security have been enhanced.      Because SR5 includes security enhancements, Vertex highly recommends applying SR5 to your O Series system as early as possible upon availability.</li>
+      
+      <li><!-- 38106 -->Trusted ID – Users now have the option of removing an unused Trusted ID.</li>
+      
+      <li><!-- 37618 -->Protection against XML entity injection vulnerability – A configuration change has been made to prevent an XML entity injection vulnerability that arises from an interaction with a supported application server.</li>
+      
+      <li><!-- 37619, 36844 -->Protection against invalid role usage – Role-based controls are enforced on the web services implementing the activities in the UI.</li>
+      
+      <li><!-- 36878 -->Protection against reflected cross site scripting – Changes were made to protect against cross site scripting vulnerabilities in the report servlet parameters and the license report servlet parameters. </li>
+      
+      <li><!-- 36879, 37255 -->Protection from insecure session identifier – Session identifiers have been randomized to avoid predictable patterns.</li>
+      
+      <li><!-- 37254 -->Improved protection of the config file – Changes were made to protect against exposure of config file through the preferences web services.</li>
+      
+      <li><!-- 38654 -->Protection against DOM cross site scripting – Applied Adobe Flex SDK template fix for potential DOM cross site scripting.</li>
+      
+      <li><!-- 37271 -->Protection against SQL injection – Data Management filters have been protected against SQL injections.</li>
+      
+      <li><!-- 36644 -->Login error message – The login error message was changed to indicate only that the login credentials are invalid and not identify if the user id or password are invalid.</li>
+      
+      <li><!-- 39169 -->A fix released for Java 5 in update 15 and Java 6 in update 11 protects against unauthorized usage of temporary files.  It is important to update your environment to this Java release level or higher.</li>
+      </ol>
+
+<h4>New Configuration parameters</h4>
+
+  <ol>
+    <li>
+      <!-- 33133 -->The parameter <span class="Code">taxgis.jurisdictionfinder.AddressCleansingDispatchClientClass=com.vertexinc.taxgis.common.domain.app.dqxi.DispatchClientJaxWs</span> should be set in the vertex.cfg file before deploying to the IBM WebSphere servlet container. Setting this parameter uses the JAX-WS Java Application Programming Interface (API)needed to run WebSphere instead of the SOAP with Attachments API for Java used by other servlet containers supported by Vertex.</li>
+    
+    <li><!-- 35596 -->Four new parameters were added for  tax processing through the Batch Client Interface feature in Data Management:
+      <ul>
+        <li class="Code"> <span class="Code">batch.client.activityPollingFrequency</span></li>
+        <li class="Code"> <span class="Code">batch.client.activity.Threads</span></li>
+        <li class="Code"> <span class="Code">batch.client.transactionTableName</span></li>
+        <li class="Code"> <span class="Code">common.reports.dir.batch.client.output.dir</span></li>
+      </ul>
+    </li>
+  </ol>
+
+<h4>Calculation Engine changes</h4>
+   <ol>
+        <li><!-- 35648 -->When a transaction is processed with an historical tax date with a new Tax Area ID that was not yet valid on that historical date, the system now provides an option to allow tax calculation to continue by substituting an appropriate Tax Area ID that was valid on the historical date. The option is provided by a configuration parameter,<span class="Code"> taxgis.jurisdictionfinder.ToApproximateTaxAreasHistorically</span>. Setting this parameter to <span class="Code">TRUE</span> causes the system to use the jurisdiction information in the new tax area to try to determine the appropriate tax area that would have been used in the past. The default value for this parameter is <span class="Code">FALSE</span>.</li>
+        
+        <li><!-- 33444 -->Situs Determination can now take into account whether the Taxpayer has an Electronically Supplied Services (ESS) registration.  The ESS registration has effective dates and is evaluated when the Calculation Engine encounters an active ESS registration. This registration applies to all countries in the European Union.</li>
+        
+        <li><!-- 32365 -->An issue where a rate of 0% was recorded in the Tax Journal with an apportioned tax has been resolved. Note that the tax amount was correct but the rate displayed was incorrect.</li>
+        
+        <li><!-- 34397 -->The U.S. state of Florida Max Tax rule is now being followed correctly for freight charge calculations.</li>
+               
+        <li><!-- 34261 -->California basis rules for applying tax on Fair Market Value now work correctly at  the state, county, and district levels.</li>
+          
+        <li><!-- 34844 -->An issue where including a discount amount on a transaction in  Canada caused the transaction to fail  has been resolved.</li>
+
+        <li><!-- 33270 -->Apportioned freight taxes for invoices containing only zero-cost items are now correctly calculated.</li>
+                   
+          <li><!-- 35541 -->An issue where Buyer Input Tax calculations of the taxable amount and effective rate were different when the unit price or extended price were included, has been resolved.</li>
+          
+        <li><!-- 32516 -->An issue where a customer's tax basis rule calculating tax based on fair market value was returning an incorrect tax when used against a multiple line item invoice where the taxing jurisdiction imposes a bracket schedule, has been resolved.</li>
+        
+        <li><!-- 33495 -->Distribute Tax Responses now include a quantity tag if the Distribute Tax Request  included a quantity tag. The quantity tag is also included in the log file entry for the Distribute Tax Request when transaction dump is turned on.</li>
+          
+        <li><!-- 34278 -->
+        An issue where the Transaction Tester  unsuccessfully calculated an Invoice Verification transaction which included freight charges on a line item, has been resolved.</li>
+
+        <li><!-- 35384 -->When creating a Tax Assist rule setting Location Codes to the value in code flexible fields,  location codes are now treated correctly as string variables. </li>
+               
+        <li><!-- 34497 -->Rounding logic has been revised to ensure that tax on low cost items  does not exceed the cost of the item.</li>
+     
+        <li><!-- 33216 -->The Calculation Engine now correctly apportions freight taxes for invoices that:
+          <ul>
+            <li>Include more than one zero-cost item</li>
+            <li>Are being calculated for a taxing jurisdiction that has a tiered tax structure</li>
+          </ul>
+        </li>
+      
+        <li><!-- 35917 -->The Calculation Engine has been modified to permit the distribution of the total amount of tax on a transaction to just the city level, and not the state, county, or district levels.</li>
+        <li><!-- 34667 -->An issue where freight tax calculation on a distribute tax request resulted in tax being incorrectly distributed among line items has been resolved.</li>
+        <li><!-- 36744 -->An issue where Canadian tax was not being correctly calculated for a taxpayer with no registered vendors has been resolved.</li>
+        <li><!-- 35366 -->An issue where distributed amounts of tax could not be adjusted across all line items in a transaction has been resolved.  The tax amount is adjusted to as many line items as are necessary to distribute the tax equally.</li>
+        <li><!-- 37159 -->Search methods in the Calculation Engine have been revised to ensure that any deferred impositions are found and correctly applied.  This resolves a problem where a lower level taxing jurisdiction did not correctly defer to a higher jurisdiction.</li>
+        <li><!-- 36837 -->An issue where Tax Journal Export failed to run against a DB2 database on an IBM AS/400 system has been resolved. An expression in the code was modified to avoid an SQL problem.</li>
+        <li><!-- 37275 -->Consumer Use transactions applying user defined tax basis rules in an environment using the Sun Microsystems Java Development Kit version 1.6 are now correctly calculated.</li>
+        
+        <li><!-- 39699 -->An issue where the format of large decimal values in allocation tables was causing calculation problems has been resolved.</li>
+        
+        <li><!-- 38517 -->To accommodate Reversal Events in partner Enterprise Resource Planning software from Oracle, the Reversal Indicator will be set to 1 on both the original transaction to be reversed, and the  transaction accomplishing the reversal.</li>
+        
+       <li><!-- 39370 -->An issue where using a state-level basis rule to switch a sale transaction to accrue a Consumer Use Tax failed to also switch the local Sales Tax  has been resolved.</li>
+        
+        <li><!-- 33912 -->The Calculation Engine no longer evaluates the form expiration date to determine if an Exemption Certificate is still valid, preventing Certificates still within their effective date range from being considered expired.</li>
+     
+        <li><!-- 39961 -->An issue where transactions that included addresses not registered to a Taxpayer or Vendor failed, has been resolved.</li>
+
+        <li><!-- 39749 -->Transactions that apportion freight and also contain a line item with a Deferred Tax Result now correctly treat the freight basis apportioned to the Deferred line item as nontaxable.</li>
+        
+        <li><!-- 38477 -->An issue where a Distribute Tax request was failing to complete because the input tax and calculated tax were different has been resolved.</li>
+
+        <li><!-- 40523 -->The Calculation Engine now correctly calculates tax on Distribute Tax transactions having one parent and one child line item in which input tax is specified.</li>
+      </ol>
+
+<h4>VIES Validation changes</h4>
+      <ol>
+        <li><!-- 32073 -->Customers who have licensed the EMEA region should note that, when attempting to perform VIES validation, the country code prefix for Greece is EL, and the country code prefix for Austria is ATU. These are different from the ISO Country Codes for Greece and Austria. If a certificate has the ISO Country Code for Greece or Austria as its prefix, it will not be recognized as an EU country and will not be processed by VIES Validation.</li>
+        
+        <li><!-- 33072 -->The VIES Validation process now incorporates more descriptive error reporting, instead of simply reporting timeout errors.</li>
+      </ol>
+<h4>Retail changes</h4>
+<p align="left" class="Caution">For all existing Vertex Indirect Tax for Retail accounts with Version 6.0 installed that have the Retail Tax Extract, (RTE) an extra step is required prior to installing the latest Service Release 5.0 patch.  Depending on your database (DB2, Oracle, or SQL Server), there will be a SQL script to run in order to get the latest RTE enhancements. Click the following link to obtain the scripts.<br />
+  <br />
+  <a href="http://knowledgebase2.vertexinc.com/deploy/GetArticle.aspx?artid=5379">http://knowledgebase2.vertexinc.com/deploy/GetArticle.aspx?artid=5379</a><br />
+</p>
+<ol><li>
+  <!-- 32355 -->
+Performance has been improved for high transaction volume customers by limiting trial calculations for business locations with expired Tax Area ID (TAID)s, logging business locations with soon-to-expire TAIDs, and including information in the Task Log Detail about locations with expired or soon-to-expire TAIDs.</li>
+
+  <li>
+    <!-- 33500 -->
+    O Series Retail Tax Extract has been changed to use the legislated tax rate instead of calculating an effective  tax rate in basis adjustment situations.</li>
+  <li><!-- 33688 -->Gift cards are now correctly determined to be not taxable in LITE (Local Indirect Tax Engine) POS (Point Of Sale) locations.</li>
+
+<li><!-- 35915 -->Retail Tax Extract now supports the use of rate overrides.</li>
+                
+<li><!-- 18150 -->Vertex Retail customers who use the Local Indirect Tax Engine (LITE) deployment can now obtain the LITE Business Location Status Status file through the Import Service. This file contains the data update number and release version for each individual store location.</li>
+              
+<li><!-- 33967 -->You can now import Comma-Separated Values (CSV) files containing bracket schedules into Bracket Management for processing.</li>
+                
+<li><!-- 38361 -->Tax brackets will now be created with rates determined from all significant dates,  not just from the start date.</li>
+                
+<li><!-- 38358 -->Bracket Tax schedules now include United States territories as well as states.</li>
+      
+<li><!-- 38814 -->An issue where the Retail Import Service could not be shut down when the import failed has been resolved.</li>
+</ol>
+
+<h4>My Enterprise user interface changes</h4>
+<ol>
+<li><!-- 37423, 39649 -->An issue where the taxability status of Vendors could not be edited after the vendor was created has been resolved.</li>
+        
+<li><!-- 33494 -->You can now edit a taxpayer physical location that is in an expired TAID using the normal Add/Edit Location popup dialog. You must enter a valid address (one that has a valid TAID) for the edit to be successful.</li>
+        
+<li><!-- 33417 -->When setting up a Taxpayer, users can no longer change the Code associated with the Taxpayer if the As-of date is later than the Taxpayer Start Date.  This ensures that the Tax Data Export/Import can replicate a system setup. </li>
+</ol>
+
+<h4>System user interface changes</h4>
+<ol>
+<li><!-- 35596 -->The Batch Client Interface can now be run through Vertex Central.</li>
+
+<li><!-- 39185 -->The Batch Client Interface Start Row parameter now begins with 1, in both the GUI and the command line interfaces.  Entering a value causes processing to begin at the line numbered 1 more than the number. For example, entering -16 directs the Batch Client Interface to begin processing the data input file at row 17.</li>
+
+<li><!-- 31409 -->You can now use Business Location as a criterion to search for Bracket Schedules in Bracket Management.</li>
+
+<li><!-- 37667 -->The Bracket Management screen that displays bracket schedules now includes a bracket tax calculator.</li>
+
+</ol>
+
+<h4>Tax Setup user interface changes</h4>
+<ol>
+
+<li><!-- 30351 -->The Situs Rules display now shows Vertex-defined Situs Rules as it had in previous O Series releases, and, as before, does not permit Vertex-defined Situs Rules to be modified.</li>
+
+<li><!-- 36320 -->When setting up basis or calculation rules, the jurisdiction selector no longer displays jurisdictions that have no impositions.</li>
+
+<li><!-- 37004 -->Adding a taxpayer to a calculation rule or basis rule now correctly causes O Series to apply an end date to the original tax rule to expire it and then to create a new rule that includes the change.</li>
+        
+<li><!-- 29482 -->Date formats in Tax Rule search results have been made consistent.</li>
+
+<li><!-- 38812 -->An issue where editing a Taxability Mapping caused O Series to be unable to find jurisdiction taxability summaries has been resolved.</li>
+
+<li><!-- 29481 -->When you search for a Tax Rule based on an exact Category, the search now returns all qualifying conditions for rules containing the qualifying condition on which the search was based.</li>
+
+</ol>
+
+
+<h4>Reporting user interface changes</h4>
+<ol>
+
+<li><!-- 35713 -->An issue where tax records were not imported correctly when  multiple records had the same parameters and date, has been resolved.</li>
+
+<li><!-- 33406 -->The Exemption Certificate Audit report now populates the Reason Type field as appropriate.</li>
+
+<li><!-- 33656 -->Users can now purge data based on specified periods of time, for example, the reporting database purge can be set to purge all data exported prior to 3 weeks ago.</li>
+    
+<li><!-- 33842 -->The count of records purged by the Tax Journal Purge process now appears on the Tax Journal Task Detail log page.</li>
+  
+<li><!-- 35583 --><!-- 35564 -->Data Extract can now find the table containing transaction data regardless of the name of the table.  It does not need to be named TransactionLog. To override the default data table, set the <span class="Code">batch.client.transactionTableName</span> to the name you wish to give the table.</li>
+
+<li><!-- 36837 --> A syntax problem that was causing data movements to fail when using O Series  with the DB2 database engine running on the IBM AS/400 system has been resolved.</li>
+
+<li><!-- 35869 -->Conditional Tax rules are now included in Taxability Analysis reports.</li>
+    
+<li><!-- 31842 -->A new Data Extract template, Retail Tax Extract Business Location, has been added.</li>
+
+<li><!-- 31842 -->The following Data Extract templates have been updated:
+      <ul>
+        <li>Retail Tax Extract Send Sale - Taxability Rule ID and user-defined Taxability Rule ID fields have been added</li>
+        <li>Retail Tax Extract In Store - Tax Area End Date, Taxability Rule ID, and user-defined Taxability Rule ID fields have been added</li>
+      </ul>
+    </li>
+
+</ol>
+
+<h4>Certificate Management user interface changes</h4>
+<ol>
+
+<li><!-- 32982 -->When a certificate applies to more than one jurisdiction, all the jurisdictions are now displayed, instead of displaying the phrase "Multi Jurisdictions."</li>
+
+<li><!-- 33404 -->When importing a file of certificates from a non-Vertex source, all certificates are now recognized.</li>
+
+<li><!-- 30056 -->All certificate images, whether stored in the Vertex root folder or not, now can be displayed and printed.</li>
+
+<li><!-- 40436 -->An issue where the TDM Certificate Export activity was processing as successful even when failed has been resolved.</li>
+
+<li><!-- 30057 -->Certificates that use pre-filled Expiration Dates from their associated forms now display the Expiration Date correctly.</li>
+
+<li><!-- 18103 -->A new Vertex Central Web Service, Find Certificate, enables you to search and retrieve certificate data stored in your financial system. Refer to the Vertex Central Web Services Integration Guide for detailed information.</li>
+
+</ol>
+
+
+<h4>Administration changes</h4>
+<ol>
+
+<li><!-- 31485 -->Users in the role of Partition System Administrator can now view and edit Flexible Fields in both Supplies and Procurement business events.</li>
+  
+<li><!-- 30438 -->The O Series Administrator can set a permission to allow the User role  to post  invoice transactions.</li>
+</ol>
+
+<h4>Tools user interface changes</h4>
+<ol>
+
+<li><!-- 30865 -->The Rate Lookup tool now allows you to enter the Tax Area ID (TAID) directly, without having to search for it.</li>
+
+<li><!-- 29290 -->Transaction Tester can now link up to three rules to a specific tax: the calculation rule, a basis rule, and a U.S. Max Tax rule.</li>
+
+<li><!-- 37000 -->Transaction Tester now accepts any value from 1 to 999 in the Nature of Transactions field.</li>
+</ol>
+<h4>Tax Assist changes</h4>
+<ol>
+
+<li><!-- 34366 -->A Tax Assist rule created to calculate taxes for a tax-exempt customer as a non-exempt customer now works correctly whether the change flag is set at the transaction level or at the line item level.</li>
+
+<li><!-- 29865 -->The following fields can now be set in pre-calculation  Tax Assist rules:
+          <ul>
+            <li class="Code style4">inputTaxLocation.city</li>
+            <li class="Code style4">inputTaxLocation.country</li>
+            <li class="style4">i<span class="Code">nputTaxLocation.mainDivision</span></li>
+            <li class="Code style4">inputTaxLocation.subDivision</li>
+            <li class="style4">inputTaxLocation.taxAreaId</li>
+          </ul>
+  </li>
+
+<li><!-- 31750 -->Tax Assist now includes parameters allowing you to create tax rules that specify an action performed if a customer, buyer, seller, or vendor is registered in a particular country. When one or more of these parameters are used in a Tax Assist expression, O Series cycles through each of the tax registrations passed on the transaction  to find a match of the value. These parameters have no default value.
+<ul>
+          <li class="Code style4">buyer.anytaxRegistration.isoCountryCode</li>
+          <li class="Code style4"> buyer.anytaxRegistration.mainDivision</li>
+          <li class="Code style4"> customer.anytaxRegistration.isoCountryCode</li>
+          <li class="Code style4"> customer.anytaxRegistration.mainDivision</li>
+          <li class="Code style4"> seller.anytaxRegistration.isoCountryCode</li>
+          <li class="Code style4"> seller.anytaxRegistration.mainDivision</li>
+          <li class="Code style4"> vendor.anytaxRegistration.isoCountryCode</li>
+          <li class="Code style4"> vendor.anytaxRegistration.mainDivision</li>
+        </ul>
+</li>
+
+<li><!-- 32368 --><span class="Code">Null</span> is now an acceptable value for the <span class="Code">customer.taxregistration.isocountycode</span> Tax Assist parameter.</li>
+
+<li><!-- 30005 -->The Imposition Name can now be set in pre-calculation Tax Assist and viewed in post-calculation Tax Assist tax rules.</li>
+
+<li><!-- 33200 -->Weight can now be set in the Then condition as part of a pre-calculation Tax Assist rule.</li>
+
+<li><!-- 28109 -->Jurisdiction Level and Imposition Type can now be added to post-calculation Tax Assist rules.</li>
+
+<li><!-- 32752 -->The following Tax Assist parameters are now readable for post-calculation Tax Assist rules:
+          <ul>
+            <li class="Code style4">tax.jurisdictionLevel</li>
+            <li class="Code style4">tax.fixedBasisIndicator</li>
+          </ul>
+        </li>
+</ol>
+
+<h3>Changes in 6.0 SR4.1</h3>
+<ol>
+          <li><!-- 35712 -->Additional taxes incurred when apportionment of freight charges caused a line item to lose eligibility for a sales tax holiday are now distributed appropriately between the primary line item and the freight line item. For the state of Connecticut, freight charges no longer cause a change in eligibility for the holiday.</li>
+    </ol>
+<h3>Changes in 6.0 SR4</h3>
+<p class="Caution"><strong><!--28553-->Announcement for current users of IBM iSeries (AS/400)</strong><br>
+    <br>Vertex has not formally tested and verified IBM i5/OS V7R1 with O Series. However, Vertex will provide support for V7R1 for O Series 5.0 and 6.0 users who were live with O Series on i5/OS prior to May 2011 and upgrade to V7R1.<br>
+<br>Vertex will retire support for the IBM iSeries (AS400) hardware and the IBM i5/OS (OS/400) operating system with O Series 7.0.</p>
+    
+    <h4>Supported platforms</h4>
+    <ol><li>
+      <!-- 28530 -->
+Vertex has added support for the Apache Tomcat 7 application server.</li>
+      </ol>
+    
+<h4>New Configuration parameters</h4>
+<ol>
+      <li>
+        <!-- 28883 -->
+        O Series now includes a configuration parameter, <span class="Code">tps.common.domain.ImputedTaxCalculator.taxIncludeRoundUpTax</span>, that improves the accuracy of Tax Inclusive Price calculations. This parameter allows you to configure whether to round up or round down the Basis Amount by a fraction of one cent to arrive at the correct Tax Inclusive Price amount.</li>
+      <li>
+        <!-- 31914 -->
+      O series now includes a configuration parameter, <span class="Code">taxjournal.SkipTransactionRow</span>, that controls whether the Calculation Engine writes separate transaction-level rows to the Tax Journal during transaction processing. These transaction-level details are required if you use Modify Synchronization messages to change transaction data after it has been initially posted to the Tax Journal. You can set this parameter only if you do <em>not</em> use Modify Synchronization messages.
+      <p> If you set this parameter to True, the Calculation Engine does not write transaction-level data to the Tax Journal. When you omit this processing step, O Series performance may be improved.
+      Otherwise, the default value (False) for this parameter directs O Series to write transaction-level data to the Tax Journal.</p>
+      </li>
+      <li>
+        <!--  32038 -->
+        O Series now includes two configuration parameters that turn off the Report Summary table and Flex Field processing that occurs during Tax Journal Export.<br />
+        <br />
+        The <span class="Code">taxjournalexport.BuildReportSummary</span> parameter turns off Report Summary processing during Tax Journal Export. If you set this parameter to False, Data Management does not process the Report Summary table during Tax Journal Export. When you omit this processing step, O Series performance may be improved. Otherwise, the default value (True) for this parameter directs Data Management to process the Report Summary table during Tax Journal Export.<br />
+        <br />
+        The <span class="Code">taxjournalexport.ExportFlexFields</span> parameter turns off Flex Fields processing during Tax Journal Export. If you set this parameter to False, Data Management does not process the Flex Fields during Tax Journal Export. When you omit this processing step, O Series performance may be improved. Otherwise, the default value (True) for this parameter directs the Data Management to process Flex Fields during Tax Journal Export.</li>
+      <li><!-- 18279 -->O Series now includes a configuration parameter to allow users to reduce the extended price of an item when tax is computed on cost. If the parameter, <span class="Code">tps.common.domain.limitTaxInclusiveToExtendedPrice</span>, is set to True, and a line item is identified as taxIncluded=true, the Calculation Engine identifies only the ExtendedPrice basis amount (whether directly supplied or derived from the quantity and unit price) as tax inclusive. The default value is False.</li>
+      <li><!-- 18279 -->O Series now includes a configuration parameter, <span class="Code">com.vertex.rba.loginRetryLimi</span>t, that allows you to set the number of invalid password attempts O Series accepts.</li>
+      <li><!-- 17601, 17602 -->O Series now includes several new configuration parameters that allow you more control of the Address Cleansing process:
+        <ul>
+          <li> <span class="Code">taxgis.jurisdictionfinder.ContinueIfAddressFailsToCleanse</span></li>
+          <li><span class="Code"> tps.common.domain.TpsJurisdictionFinderOptions.ContinueIfAddressFailsToCleanse</span></li>
+          <li><span class="Code">taxgis.jurisdictionfinder.ToUseAddressCleansingDPV</span></li>
+          <li class="CodeVariable"> <span class="Code">tps.common.domain.TpsJurisdictionFinderOptions.ToUseAddressCleansingDPV</span></li>
+          <li class="Code"> <span class="Code">taxgis.jurisdictionfinder.ToRetrieveAddressCleansingSecondStreetLine</span></li>
+          <li class="Code"><span class="Code"> tps.common.domain.TpsJurisdictionFinderOptions.ToRetrieveAddressCleansingSecondStreetLine</span></li>
+        </ul>
+        <p>You can set these parameters through Vertex Central  in  Tools &gt; Tax Area Lookup&gt; By Address  in the Tax Area ID Lookup Options window as well as in the <span class="Code">vertex.cfg</span> file. Refer to the Configuration File Parameters Reference Guide for more information.</p>
+      </li>
+    
+</ol>
+<h4>Calculation Engine Changes</h4>
+<ol>
+
+<li>Situs Determination can now be performed at the District level, allowing more accurate determination of tax on a district-by-district basis.
+      </li>
+    <li>
+      <!-- 30628 -->
+      The Calculation Engine was updated to correct an issue in which a distributed tax calculation with an input tax amount and no jurisdiction type was returning incorrect results.</li>
+    <li>
+      <!-- 18280 -->
+      O Series now properly calculates tax on gift cards in locations where they are exempt from local taxes.</li>
+    <li>
+      <!-- 17270 -->
+      An issue where there were no taxes to which an input tax could be distributed has been resolved.</li>
+    <li>
+      <!-- 29160 -->
+      An issue where a nontaxable parent line item with apportioned child line items was incorrectly showing the child line items as taxable when the parent extended amount was negative, has been resolved.</li>
+    <li>
+      <!-- 30628 -->
+      The Calculation Engine was updated to correct an issue in which a distributed tax calculation with an input tax amount and no jurisdiction type was returning incorrect results.</li>
+    <li>
+      <!-- 17269 -->
+      An issue where the calculation of tax for the category Consumable Supplies Sold Without Prescription had failed, has been resolved.</li>
+    <li>
+      <!-- 17552 -->
+      Rate Classification is now set in Post Tax Assist for input/imported VAT calculations.</li>
+</ol>
+<h4>General Enhancements</h4>
+<ol>
+            <li>
+              <!-- 30413 -->
+              O Series performance when adding customers, opening records, and saving records has been improved, particularly when there are large numbers of customers in the database.            </li>
+            <li>
+              <!-- 28550 -->
+              O Series version 6.0 now supports the International Chamber of Commerce (ICC) Incoterms&reg; 2010, which are now in effect.</li>
+            <li>
+              <!-- 32159 -->
+              The time required to display Flexible Fields in the Transaction Tester has been substantially reduced.</li>
+    </ol>
+    <h4>User Interface Changes</h4>
+    <ol>
+        <li><!-- 27767 -->Users can now select additional jurisdictions and additional imposition types from the Select Tax Imposition screen, as was the case in earlier version of Indirect Tax O Series. Only jurisdictions that intersect with the jurisdiction originally selected when the imposition was created may be added. </li>
+        
+        <li><!--  27788 -->The Task Log Detail screen for the TDM Certificate Export to the Vertex Q Series Tax Decision Maker now includes a verified link to the exported output file. This link enables you to display the exported TDM Certificate data.</li>
+            
+        <li><!--  31746 -->The Reporting Purge screen has been revised to purge records posted before the present date (Today).  It had previously been purging records posted up to and including the present date.  Since the purge is based on the date a record is posted, rather than on the date a record is exported, the phrase "Purge data exported prior to:" has been changed to "Purge data posted prior to:". </li>
+        
+        <li><!--  16969 -->Usernames can now, in all instances within O Series, be up to 64 characters long.</li>
+
+    </ol>
+
+<h4>My Enterprise User Interface Changes</h4>
+<ol>
+            <li><!-- 28337 -->An issue where creating a customer from the My Enterprise feature menu with a Contact set up with the Billing Location Role created duplicate contacts when exported and re-imported has been resolved.</li>
+            
+            <li><!-- 25914 -->Exemption Certificates can now be dated prior to the current date to allow adding certificates that were previously issued.</li>
+              
+              <li><!-- 28865 -->When a Business Location uses an expired Tax Area ID, a warning indicator is now displayed, alerting the user to reassign the Tax Area ID.</li>
+</ol>
+
+<h4>Tools User Interface Changes</h4>
+    <ol>
+        <li>
+          <!-- 28341 -->
+          A Rate Lookup inquiry and the report generated by the inquiry now show results to the same level of precision, three digits after the decimal place.     </li>
+        <li>
+          <!--  17231 -->
+          The "|" (pipe) character is now supported by Tax Assist for the EDIT ME field.</li>
+        <li>
+          <!--  28396 -->
+          The Post To Journal indicator can now be set in pre-calculation Tax Assist rules for Supplies business events as well as for Procurement business events.</li>
+        <li>
+          <!-- 28341 -->
+          An issue where the Rate Lookup tool was using incorrect tax rules to return combined tax rates, causing incorrect rates to be displayed, has been resolved.</li>
+    </ol>
+<h4>Tax Setup User Interface Changes</h4>
+    <ol>
+        <li>
+          <!--  32192 -->
+          Tax Rules can now be written based on the Conditional Jurisdiction on which the rule is based.</li>
+        <li>
+          <!--  27843 -->
+          Taxability information for procurement taxability categories is now displaying correct information on the Taxability Analysis tab of the Taxability Categories screen.</li>
+        <li>
+          <!--  17223 -->
+          An issue where a user-defined taxability category displayed the user-defined category instead of the correct Vertex category on the Tax Rule screen in both the regular Tax Rule view screen and in Transaction Tester has been resolved.</li>
+        <li>A
+          <!--  18270 -->
+          new column has been added to the Taxability Mapping search results screen. The column contains the taxpayer name when the mapping is for a taxability driver, customer or vendor and is blank when the mapped entity is already a taxpayer.</li>
+    </ol>
+
+<h4>Reporting User Interface Changes</h4>
+
+        <ol>
+          <li>Standard Report Changes</li>
+          <ul>
+            <li>
+              <!--  17082 -->
+              The transaction Summary report no longer includes a State section for countries that have no such divisions.</li>
+        <li>
+          <!--  27511 -->
+          Standard Vertex Reports now correctly display Company Code, Division Code, and Department Code when Company and Division level Taxpayers are set up, but not a corresponding Department level Taxpayer.</li>
+          <li><!--  17079 -->
+        The format of the printable Taxability Analysis report has been reworked to limit the truncation of data, allowing more data to be displayed. </li>
+          </ul>
+          <li>Data Extract Changes    
+            <ul>
+              <li><!--  30976 -->The Certificate Coverage Jurisdictions Data Extract no longer generates duplicate certificates during Batch certificate data extracts.</li>
+            
+        <li><!--  28737 -->Data Extract can now create a report showing all certificates imported during any given day, using the current certificate template with an additional field showing the last update.</li>
+            
+        <li><!--  29753 -->The following fields have been added to Data Extract for Jurisdictions to retrieve enough information to identify jurisdiction IDs for counties, cites, or districts.
+
+      <table width="371" border="1">
+        <tr>
+          <th width="198" class="TableHeading" scope="col"><div align="center">New Field Name</div></th>
+          <th width="157" class="TableHeading" scope="col">Template </th>
+        </tr>
+        <tr>
+          <td><div align="center">Parent Jurisdiction ID</div></td>
+          <td><div align="center">Jurisdiction</div></td>
+        </tr>
+        <tr>
+          <td><div align="center">Parent Jurisdiction Name</div></td>
+          <td><div align="center">Jurisdiction</div></td>
+        </tr>
+        <tr>
+          <td><div align="center">Parent Jurisdiction Type</div></td>
+          <td><div align="center">Jurisdiction</div></td>
+        </tr>
+        <tr>
+          <td><div align="center">City Jurisdiction ID</div></td>
+          <td><div align="center">Tax Areas</div></td>
+        </tr>
+        <tr>
+          <td><div align="center">Sub Division Jurisdiction ID</div></td>
+          <td><div align="center">Tax Areas</div></td>
+        </tr>
+        <tr>
+          <td><div align="center">Main Jurisdiction ID</div></td>
+          <td><div align="center">Tax Areas</div></td>
+        </tr>
+        <tr>
+          <td><div align="center">Country Jurisdiction ID</div></td>
+          <td><div align="center">Tax Areas</div></td>
+        </tr>
+      </table>
+
+      <li><!--  17726 -->The Returns Export Date field has been added to the Data Extract Transaction Detail Report.</li>
+      
+      <li><!--  28399 -->The Certificate Data Extract now includes information on taxpayers associated with the customer.</li>
+    </ul>
+</ol>
+
+<h4>Retail Changes</h4>
+<ol>
+      <li>For Vertex Indirect Tax for Retail customers who use the Retail Tax Extract (RTE) deployment:
+        <ul>
+          <li><!--  30805 -->The Retail Tax Extract incorrectly returned a 0% rate when you selected Business Locations and Product Classes as your extract  criteria. This has  been corrected in this release. You can successfully perform a Retail Tax Extract using any or all of the extract criteria, such as Taxpayer, Business Locations, and Product Classes.</li>
+          
+          <li>Five new Retail Tax Extract templates have been added, including:
+            <ul>
+              <li> Bracket Schedules</li>
+              <li> Certificate Exemptions</li>
+              <li> Customer Exemptions</li>
+              <li> In Store Tax Rules</li>
+              <li> Send Sale Tax Rules</li>
+            </ul>
+          </li>
+        </ul>
+    </li>
+    
+      <li><!--  33209 -->An issue where data from POS transactions was not being sent correctly to the central headquarters systems has been resolved. </li>
+</ol>
+
+<h4>System User Interface Changes</h4>
+<ol>
+<li><!--  31746 -->The Partition System Administrator Role in a Procurement business event now has default permissions to View Flex Fields (under the Tax Rules) and Edit Flex fields(under Tax Setup) defined through System>Roles. This role can now edit and view flex fields.</li>
+
+<li><!--  31744 -->The Tax Journal Purge screen has been revised to purge records posted before the present date (Today).  It had previously been purging records posted up to and including the present date.  Since the purge is based on the date a record is posted, rather than on the date a record is exported, the phrase "Purge data exported prior to:" has been changed to  "Purge data posted prior to:".</li>
+
+</ol>
+
+<h3>Changes in 6.0 SR3.1</h3>
+<ol>
+  <li>
+    <!--  29448 -->
+  Taxability Mapping did not display a conditional rule created using the imposition Beverage Container Fee in CA. This issue has been resolved.</li>
+  <li>
+    <!--  29651 -->
+    An issue where Retail Tax Extract (RTE) did not completely populate the RTE tables due to some U.S. Max Tax rules generating two line item tax details has been resolved.  The Retail Tax Extract now completes successfully with no log errors, and excludes the Max Tax Line Item from the Retail Tax Extract XML. This impacts only users who licensed Vertex Retail and use the RTE deployment model.</li>
+  <li><!--  29473 -->In Standard Reports, an issue where the Returns Export Location report did not generate correctly when running O Series on a UNIX-based system has been resolved.</li>
+</ol>
+<h3>Changes in 6.0 SR3</h3>
+<ol>
+  <li>
+    <!--  1005417 -->O Series now supports version 5 of the Apple Safari web browser.</li>
+  <li>
+  <!--  229209 -->For users who license Vertex Indirect Tax for Retail, the following enhancements have been introduced:  </li>
+  <ul>
+    <li>Vertex Retail deployment options have been updated. You can deploy using either a Local Indirect Tax Engine to calculate tax at POS locations using XML messaging, or use  Retail Tax Extract to generate schema and bracket schedules for POS tax lookup. Refer to the <span class="Emphasis">Vertex
+Indirect Tax for Retail Installation and Administration Guide</span> and <span class="Emphasis">Vertex Retail Tax Extract Integration Guide</span> for details.</li>
+    <li>In Vertex Central, Data Management has been updated to include Tax Engine Extract, Retail Tax Extract, and Import Service. Refer to the Data Management section of <span class="Emphasis">Vertex Central Help</span> for more information about these features.</li>
+    <li>A new feature, Bracket Management, has been added to the System menu. This enables management of bracket schedules for use in point-of-sale tax lookups. Refer to the new Bracket Management section of <span class="Emphasis">Vertex Central Help</span> for more information.</li>
+  </ul>
+  </li>
+  
+  <li>The Batch Client Interface (BCI) has been enhanced to accept a database table as its input source as an alternative to using CSV files. Refer to the <span class="Emphasis">BCI Integration Guide </span>for more information.</li>
+
+  <li><!--  28723 -->An issue where Exemption Certificate Customer Contact information was unavailable to the letter batch creation process and causing errors in the letters has been resolved. </li>
+
+  <li><!--  18227 -->For users who process a high volume of transactions using multiple Tax Journal Export activities, the Summary Data Update feature provides a means to reduce total processing time.  Summary data can also be updated when exporting the Tax Journal to the Reporting database.</li>
+
+  <li><!--  1063744/17225 -->Scalability when processing concurrent calculation requests from large numbers of concurrent threads has improved.</li>
+
+  <li><!--  1006976/17679 -->The State-by-State Taxability report has been enhanced to function in countries outside the US.</li>
+
+  <li><!--  VTX008481 -->An issue where the calculation of ancillary charges on line items fails because some of the locations where the line items are sold do not impose taxes has been resolved.</li>
+
+  <li><!--  992188/16982 -->Logic has been added for child taxpayers to adopt the registration setup information of the parent taxpayer only if the child taxpayer is not a filing entity.</li>
+  
+  <li><!--  988034/17663 -->All bracket tax schedules now apply at the invoice level - that is, on combined taxable amounts from all line items on the invoice.</li>
+  
+  <li><!--  1052396/17173 -->Performance when doing broad searches (for example, a search for many customers) has been improved.</li>
+
+  <li>Rate Lookup changes: </li>
+  <ul>
+    <li><!--  1021784/17074 -->An issue where incorrect US Sales Tax Holiday special rates were being returned has been resolved.</li>
+    
+    <li><!--  1005416/17018 -->Rate Lookup now correctly takes into account jurisdiction conditional rules when determining the rates for each jurisdiction in a tax area.</li>
+  </ul>
+  <li><!--  1014194/17048 -->Only user-defined situs (Place of Supply) rules are now shown in the user interface.</li>
+
+  <li><!--1004880-->Tax Assist has been enhanced with three new fields to provide more information  about the buyer in value added tax transactions:
+    <ul>
+      <li>The <strong>buyer.taxRegistration.hasPhysicalPresenceInd</strong> field indicates whether or not the buyer has a physical presence in the country represented by the registration.</li>
+      <li>The <strong>buyer.taxRegistration.isoCountryCode</strong> is a two-character or three-character alphabetic International Standards Organization (ISO) code indicating 
+      the country represented by the registration. For a list of countries and their ISO codes, refer to Country Names in the Supporting Information section in the XML Integration Guide or Java Integration Guide.</li>
+      <li><!--1054420-->An <strong>inputTotalTax</strong> field is now available for Pre-Calculation Tax Assist rules for IF and SET statements in both Supplies and Procurement.</li>
+    </ul>
+  <li><!--  1062036/17710 -->District Name and District Type fields have been added to the Tax Areas template in Data Extract</li>
+
+  <li><!--  1014258/17050  -->Entries in the Reason Type drop-down on the Jurisdictions > Details tab on the Edit Certificate screen are now alphabetized, with the exception of 'None', which is always first in the list.</li>
+
+  <li>Calculation Engine changes:
+    <ul>      
+      <li><!--  18218 -->A new checkbox, Include New Impositions, enables users to control whether all new impositions added in a Vertex monthly data update are automatically activated or deactivated.  This new check box is available for taxpayers, customers, vendors, and certificates.  This checkbox is checked by default, automatically applying new impositions as part of calculations (as was the case in previous O Series releases).</li>
+      <li><!--  1007860 -->An issue where exemption certificates set up in the US state of California at the county level were incorrectly setting the district level as taxable has been resolved.</li>
+      <li><!--  1006998/17680 -->The Calculation Engine has been revised to no longer apply country level basis rules for an imposition of a different type at lower-level jurisdictions. For Basis tax rules, the new Tax Type field enables users to specify tax type as a qualifying condition.</li>
+      <li><!-- 1037112/17704 -->The taxable freight amount is now correctly calculated in transactions with apportionment where the Tax-included indicator is set.</li>
+      <li><!--  15691 -->An issue where the Rate Classification was not always returned in cases where it was set through other than a tax rule has been resolved.</li>
+      <li><!--  993790/16986 -->Rounding logic has been updated to exclude exact calculations of tax from rounding adjustment. An exact calculation is one where the precision of a result does not exceed that of the currency used in the calculation. For example, a calculation of tax of $6.025 would not be considered an exact calculation since the precision of the US Dollar is only two digits. </li>
+      <li><!-- 17131 -->An issue where basis amounts in a tax-inclusive processing scenario are incorrectly adjusted, resulting in incorrect taxable amounts, has been resolved.</li>
+      <li><!-- 1052346/17198 -->An issue where a tax adjustment due to rounding caused the tax to exceed the taxable amount has been corrected.</li>
+      <li><!-- 17143 -->Shipped items having a negative value are considered credits. If an apportionment rule applies to the associated transaction, other negative line items on the transaction provide the basis for allocating the freight charge.</li>
+      <li><!-- 974752/17144 -->Adjustment of two taxable tax details through apportionment processing resulted in  two non-taxable details being incorrectly set equal to the basis amount, causing the non-taxable amounts to be doubled. This has been corrected.</li>
+      <li><!-- 17148 -->An issue where calculations with a Deferred Tax Result were setting the filing taxable   amount incorrectly has been resolved.</li>
+      <li><!-- 1062232/17216 -->Value Added Tax is now calculated for the Corsica region of France without a location error being displayed.</li>
+      <li><!-- 17148 -->The Brazil final substitution tax value now correctly calculates in instances where the ICMS Reseller amount is greater than the Substitution Tax amount.  In such cases, the Tax Amount is now set to "0".</li>
+      <li><!-- 1083876/28046 -->An issue where Distribute tax transactions in a Jurisdiction with freight charges and a U.S. Max Tax rule were being calculated incorrectly has been resolved.</li>
+    </ul>
+  </li>
+  <li><!--  988284 -->In Taxability Manager Data Export, an issue where attaching a note to category mappings caused data export to fail has been resolved.</li>
+  <li><!--1037120-->Apportionment logic has been updated with a new option, Trigger, that allows freight charges to be nontaxable if associated with line items that are all nontaxable, but fully taxable if at least one of the associated line items is taxable.</li>
+  <li><!-- 1064330 -->An issue where lower-level registration information generated for a jurisdiction was not being cleared from the GUI display before the display was repopulated with different information has been resolved.</li>
+  <li><!-- 16832/969144 -->Business Locations associated with expired Tax Area IDs (TAID) are no longer displayed.</li>
+  <li>Taxability Mapping Changes:
+    <ul>
+      <li><!-- 17000/997496 --> An issue where Tax Data Import included jurisdictions not appropriate to the US state of Minnesota, has been resolved.</li>
+      <li><!-- 17000/997496 -->An issue where taxability records for a parent taxpayer, registered everywhere in the United States, with a number of children also registered everywhere, could not be displayed, has been resolved.</li>
+      <li><!-- 1097222/27818 -->Mapping to a Taxability Category based on one driver is now always ignored when a mapping based on a combination of the same driver and a second driver has been applied. This fixes an infrequent problem that was preventing a user from overriding an exempt usage  category (Manufacturing) by a more specific combination of drivers.</li>
+    </ul>
+  <li><!-- 1030516/17103 -->An issue where the View Filter Detail page was not displaying the correct filter has been resolved.</li>
+  <li><!-- 1035710/17124 -->
+   The Tax Rule View screen now correctly populates the Reason Code field and correctly displays the Is Standard checkbox.</li>
+  <li>Taxability Driver changes:
+    <ul>
+      <li><!-- 1032654/17111 -->Creating a taxability driver identical to an existing driver with the same start date now produces an error.</li>
+      
+      <li><!-- 1100634/28268 -->Taxability Driver records having the same code or name,  but  associated to different perspectives and  not sharing business events, can now be imported.</li>
+    </ul>
+  </li>
+  <li><!-- 1033062/17113 -->Results of batch testing in Transaction Tester are retained until the user logs off.</li>
+  <li><!-- 969042/17138 -->When performing calculations in Brazil and India in which multiple impositions (Service Tax, Secondary and Higher Education Cess, Education CESS, Central Excise Tax, and VAT) are evaluated and a NO TAX conclusion results, O Series now consistently returns the VAT imposition.</li>
+  <li><!-- 969042/17178 -->An issue where modifying registrations changes the registrations back as far as the start date of the taxpayer without regard to the as of date, has been resolved.</li>
+  <li><!-- 18254 -->Users can now start multiple retail extract jobs.  The jobs are processed serially.</li>
+</ol>
+<h3>Changes in 6.0 SR2</h3>
+<ol>
+  <li>Reporting changes:
+    <ul>
+      <li><!-- 898092 -->A new standard report is available for the United States that gives state by state tax information for specified product classifications.</li>
+      <li><!-- 898118 -->A new standard report is available listing US tax holidays by state and type of tax holiday.</li>
+      
+      <li><!-- 898122 -->US Sales tax holiday information is now noted in a separate section of the monthly Summary of Changes report, to make the information easier to use.</li>
+    </ul>
+  </li>
+
+  <li>Taxability Mapping changes:
+    <ul>
+      <li><!-- 978360 -->Taxability and Conditional Rules now display more quickly when viewed under Taxability Mapping.</li>
+      
+      <li><!-- 862604 -->Taxability Mapping now includes a filter that prevents users from making a condition rule map to an entity in a jurisdiction in which it is not registered.</li>
+      <li><!-- 1009606 -->An issue where mapping editing failed trying to pull the taxability and conditional rules resulting in too many starships fields has been resolved.</li>
+    </ul>  
+  <li><!-- 978140 -->The O Series Web Services version number is now included on the Web Services home page.</li>
+  
+  <li><!-- 995968 -->When importing allocation tables, row order is determined first by effective date, then by the order of the rows in the import file.</li>
+  
+  <li>Tax Assist changes:
+    <ul>
+      <li><!-- 978342, 956300 -->In Tax Assist Lookup Tables with a Data Type of <strong>String</strong>, all record values are stored exactly the way they are entered.  Leading and/or trailing zeros are not removed.
+        Tax Assist Lookup Tables with a Data Type of <strong>Numeric</strong> store entered values as follows:
+        <ul>
+          <li> Leading zeros are always removed, and trailing zeros are removed where the number of digits to the right of the decimal point is greater than 2. </li>
+          <li>Leading zeros are always removed, and trailing zeros are added to values with a decimal point, and none or one digit to the right of the decimal point. </li>
+        </ul>
+      </li>
+      <li><!-- 978140 -->The transaction Currency and original Currency Tax Assist parameters can now be set on pre-calculation tax assist rules.</li>
+  </ul>
+  <li><!-- 943902 -->Business locations are no longer deleted because they are not in the import file.  A change to a business location now causes the existing location to be expired and the new record imported.</li>
+  <li>Exemption Certificate Manager changes:
+    <ul>
+      <li><!-- 945510 -->All forms in ECM now display correctly, without causing errors.</li>
+            
+      <li><!-- 946124 -->Letter templates in ECM now correctly format addresses.</li>
+            
+      <li><!-- 910384 -->Certificate Letter Batch processing behaves similarly to Certificates when two or more jurisdictions are selected.  If there is a letter form common to all selected jurisdictions, that form is displayed.  If not, no form is displayed.</li>
+            
+      <li><!-- 849892 -->Letter batches and letter templates can not be imported and exported using TM import/export.  The facilitates the migration of data between ECM and O Series.</li>
+    </ul>
+  </li>
+  <li>
+    <!-- 931112 -->When a certificate is created, if an Issue date is not provided, the Issue date defaults to the system date.</li>
+  <li><!-- 957816 -->An issue where the Vendor Code and Company Code were placed incorrectly in Invoice Verification Reports has been resolved.</li>
+  <li>Calculation Engine changes:
+    <ul>
+      <li><!-- 947806 -->For value added tax transactions with a negative base, FilingRecoverableAmounts are now correctly computed whether the Recoverable Amount is negative or positive.</li>
+              
+      <li><!-- 928834 -->An issue where state-level exemptions were incorrectly causing no tax to be calculated for local jurisdictions has been resolved.</li>
+            
+      <li><!-- 934330 -->O Series now correctly calculates accrual amounts when a negative tax accrual is required during short pay accrual difference transactions.</li>
+            
+      <li><!-- 934336 -->An issue where a positive extended price was creating negative taxes when negative unit price or negative quantity is provided has been corrected.</li>
+        
+      <li><!-- 969042 -->When performing a tax calculation in which there are multiple impositions to choose from, and a NO TAX conclusion is returned, the VAT imposition is automatically selected.</li>
+      <li><!-- 1014794 -->
+      An issue where the calculation engine did not correctly compute Filing currency values has been corrected.  The transactions now include the conversionRate and filingCurrencyUnitId values.</li>
+      
+      
+      
+      
+      <li><!--  982582 -->Child line items of parent line items requiring the calculation of filing currency values now have those values calculated correctly.</li>
+      
+      <li><!--  1006074 -->The O Series Application Program Interface can now return the salesTaxHolidayIndicator attribute as an optional boolean value to the following child elements of the Taxes element: TaxRuleId, BasisRuleId and MaxTaxRuleId.</li>
+      
+      <li><!--  997180 -->Rounding logic has been updated to exclude exact calculations of tax from rounding adjustment. An exact calculation is one where the precision of a result does not exceed that of the currency used in the calculation. For example, a calculation of tax of $6.025 would not be considered an exact calculation since the precision of the US Dollar is only two digits. </li>
+    </ul>
+  </li>
+  <li><!-- 936710 -->The O Series Batch Client now removes embedded carriage return and feed control characters from all data in import files, making the data easier to parse.</li>
+  <li><!--953906-->O Series now supports Microsoft SQL Server 2008 R2.</li>
+  
+  <li><!--1009828-->All 25 flex code fields are now shown in the SalesTaxDetail, ConsumerUseTaxDetail, and VATDetail transaction detail reporting views.</li>
+  
+    
+  <li><!--935850-->Taxability Categories with Deferred Taxability are now displayed in the Taxability Analysis tab for Taxability Categories in Tax Setup.</li>
+  
+  <li><!--938432-->An issue where Assisted Parameters that populated the Vendor ISO Code, Registration, and Physical Presence Indicators were not changing the VAT determination, has been resolved.</li>
+  
+  <li><!--1025546-->If you are logged into Vertex Central as a Master Administrator (admin),  you can now edit the information associated with a saved partition or assign a Trusted ID to that partition. A new button, Edit Partition, enables you to perform this task. </li>
+</ol>
+<h3>Changes in 6.0 SR1
+  <!--930336--> 
+</h3>
+<ol>
+   <li>Changes to Vertex Central:
+     <ul>
+       <li><!--929658-->In Certificates, error messages have been revised.</li>
+       
+       <li><!--815732-->In Rate Lookup, countries outside  the areas included in your license are no longer displayed.</li>
+       
+        <li><!-- 696456 -->An array missing an element, causing a Tax Data Export error, has been corrected.</li> 
+        
+        <li><!-- 852570 -->The Activity Log page in Administration now gives users the ability to set a date for purging logs. You can enter a date manually in the <strong>Purge logs on or before</strong> box, or use the calendar icon to set the date.</li>
+     </ul>
+  </li>
+ 
+   <li>Changes to Transaction Tester:
+     <ul>
+       <li><!--560376-->Users can now override the physical location and nexus of sellers and vendors in Transaction Tester</li>
+       
+       <li><!--929520-->
+       A search in Transaction tester for valid certificates no longer includes certificates that were not validated.</li>
+       <li><!--940592, 947242-->In Transaction Tester, the taxability driver selector now displays drivers when a child taxpayer inherits from its parent taxpayer.</li>
+     </ul>
+  </li>
+ 
+   <li>Changes to Exemption Certificate Manager:
+     <ul>
+       <li><!--936210-->Verified Certificates created at the Lower level Jurisdictions now inherit the reason types of the parent Jurisdiction.  Reason Codes are carried to reporting DB and are displayed correctly on Data Extract.</li>
+     </ul>
+   </li>
+
+  <li>Changes to Data Extract:
+    <ul>
+      <li>
+        <!--928086-->
+        In Data Extract, a Unit of Measure field has been added to the Transaction Detail template.</li>
+      <li>In Data Extract, a No Registration indicator has been added to the Transaction Detail template.</li>
+      <li>
+        <!--932164-->
+        Confirmed taxpayer registrations are now posted to the Taxpayer Registrations template.</li>
+    </ul>
+  </li>
+  <li>Changes to Taxability Mapping:
+    <ul>
+      <li>
+        <!--931388-->
+        Flex Date fields now have date fields available for Taxability Category mapping.</li>
+      <li>
+        <!-- 910490 -->
+        Automatic taxability mapping rules can now be successfully imported if they have qualifying conditions.</li>
+    </ul>
+  </li>
+  <li>Changes to Tax Assist:     
+    <ul>
+      <li>
+        <!--787228-->
+        Reverse Charge/Import VAT notices are now returned correctly.</li>
+      
+      <li><!--860784-->Post Tax Assist now works correctly by not displaying parameters associated only with child items at the with parent line item level.</li>
+      
+      <li><!--935098-->Tax Assist Allocation Table names can now include spaces.</li>
+      
+      <li><!--858428-->The Tax Assist Registration function now correctly includes three selections: Not Found, Has Physical Presence, and No Physical Presence.</li>
+    </ul>
+  </li>
+  <li>Changes to Tax Data Export:    </li>
+    <ul>
+      <li>
+        <!--818650-->
+        Tax Data Export now omits exporting unusable 
+        mappings such as when a customer end date is earlier than the taxability category start date.</li>
+    </ul>
+  </li>
+  <li>Changes to the Calculation Engine:  
+    <ul>
+      <li><!--811178-->Rounding logic has been updated to improve accuracy for taxes on line items that are grouped together.</li>
+      
+      <li><!--951540-->Rounding logic has been updated to improve accuracy for value added tax transactions with multiple line items where the second line item has an extended amount of zero.</li>
+      <li><!--949914-->Rounding logic has been updated to accurately round taxes on individual line items in large, multi-recipient invoices.</li>
+      
+      <li><!--956288-->Rounding logic has been updated to accurately round taxes on transactions where there are state and local bracket taxes.</li>
+      
+      <li><!--917762-->The Calculation Engine now recognizes registered tax rules for cities in Canada.</li>
+      <li><!--811114-->An issue where an incorrect output notice was displayed, when situs was incorrectly evaluated at the Physical Origin rather than the Destination, has been resolved.</li>
+      <li><!--927986-->The Calculation Engine now correctly  reports an error when the tax inclusive indicator is set, the tax inclusive price is zero, and the tax is not zero.</li>
+      <li><!--922592-->Apportionment logic has been updated to more correctly apportion  tax-inclusive amounts. </li>
+      <li><!--838302-->An issue where the currency conversion data contained in the Vendor tax for VAT input element was not being used and thus causing incorrect results, has been resolved.</li>
+      <li><!--847108-->Users can now set all jurisdictions to round down.</li>
+      <li><!-- 753552 -->Freight charges on a child line item are now  taxed correctly when freight is associated to a user-defined rule rather than applying the appropriate default rule.</li>
+      <li><!-- 946030 -->An issue that caused a calculation failure in Brazil when multiple rate overrides had been supplied has been resolved.</li>
+      <li><!-- 952368 -->For all value added tax distribute tax transactions the FilingCaculatedTax amounts are now computed correctly.</li>
+    </ul>
+  </li>
+  <li>
+    <!--928184, 924344-->
+  Changes to Tax Setup:
+    <ul>
+      <li>
+        <!--946366-->
+        An issue that prevented the user from creating a tax rule for the first user-defined imposition type in a jurisdiction (when there was also a user-defined rule in the primary imposition) has been resolved.</li>
+      <li>
+        <!--945630-->
+        The tabs for adding new Calculation and Basis tax rules now are labeled identically for consistency and ease of use.</li>
+      <li>
+        <!--910520-->
+        Changes to the Tax Type made when editing a Tax Imposition are now saved.</li>
+    </ul>
+  </li>
+  <li>An issue where the WebSphere 6.1 and WebSphere 7.0 application servers did not deploy correctly has been resolved.</li>
+  <li>
+    <!--926110-->
+    An issue where deselecting all countries other than the US in Jurisdiction Preferences caused other countries that have lower-level jurisdiction to remain selected, has been resolved. </li>
+  <li>
+    <!-- 948428, 948430 -->
+    In Data Management, a problem was corrected which could cause the Tax Journal Export to fail if you did not purge all previously exported transactions in the Tax Journal. You must purge all previously exported Tax Journal transactions before you attempt another Tax Journal Export.</li>
+  
+  <li><!--951894-->Value added tax calculations use the new  URL for the European Union VIES Validation web site.</li>
+
+  <li><!--902110-->O Series users can now upload files from any directory or folder on their individual workstations in the following areas:  
+    <ul>
+      <li>Data Update</li>
+      <li>Tax Data Import</li>
+      <li>Certificates (from the Images tab)</li>
+      <li>Forms</li>
+      <li>Certificate Audit reports</li>
+      <li>Single and batch files in Transaction Tester</li>
+    </ul>
+  </li>
+</ol>
+<h3>Changes in 6.0</h3>
+<ol>
+  
+  <li><!--645742, 491532-->The new Vertex O Series licensing structure makes it easier for users to license only those capabilities that their business operations require. License either the Supplies (sales) business events, Procurement (purchases) events, or both, along with the requisite regional data set to meet your requirements. Additional optional capabilities include:<br />
+    <ul>
+      <li>Retail license supports the specialized point-of-sale processing needs of the retail industry.</li>
+      <li> Leasing license provides a special data set to meet the unique taxation needs of leasing transactions.</li>
+      <li> Vertex&reg; Address Cleansing license provides access to an address cleansing service that returns ZIP+4 information for U.S. addresses.</li>
+      <li>Newly-enhanced Vertex Reporting and Analysis license provides the flexible reporting capabilities of Cognos Business Intelligence.</li>
+    </ul>
+  </li>
+  <li><!--544764-->Vertex Exemption Certificate Manager (ECM) is now integrated into the Vertex O Series version 6.0 platform. ECM automates the collection, validation, and maintenance of tax exemption certificates for North American jurisdictions. Capabilities include:
+    <ul>
+      <li>Certificate image storage</li>
+      <li>Jurisdiction specific validation rules on certificate number and expiration dates</li>
+      <li>User-defined validation preferences</li>
+      <li><!--263596-->Library of US and Canada  federal, state/province, and local forms by transaction type (for example, sales or lease)</li>
+      <li>Searchable auditor reporting and certificate export</li>
+      <li>Correspondence management</li>
+      <li><!--541426-->Migration tool for users of ECM v3.x to move their data to Vertex O Series v6.0</li>
+    </ul>
+    <p>The Vertex ECM solution manages certificates, provides compliance reporting, and supports auditing requirements that aid in the avoidance of costly penalties as well as regulation compliance.</p>
+  </li>
+  <li> Vertex O Series version 6.0 features a completely redesigned user interface based on Adobe Flex. Using Flex provides the a more attractive, easy-to-use global user interface with selected workflow improvements. Significant changes in the Vertex Central graphical user interface include: </li>
+  <ul>
+    <li><!--491532-->Separate features for Sales Tax, Consumer Use Tax, and Value Added Tax have been consolidated into a single Indirect Tax user interface. Users will now select from one of two business events (Supplies or Procurement). Vertex Central features permissions have been reorganized to reflect Supplies and Procurement business events. Those permissions that are shared by both business events are under System. </li>
+    <li><!--802292-->The interface for Tax Assist has been modified to take advantage of the new Adobe Flex user interface technology. As a result, a significant amount of new functionality has been introduced, including enhanced editing flexibility and a new drag and drop feature, which simplifies the building of rules. In addition there is a new tax allocation feature which provides an easier method for the user to create and maintain child line items.</li>
+    <li>When multiple regions are licensed, Vertex O Series now allows for the sharing of taxability drivers providing for more efficient product mapping.</li>
+    <li>Vertex O Series has a new Preferences feature. Preferences are the specific system settings within Vertex O Series that enable you to customize the values presented for locales (geographic regions), currency rate, transaction types, certificates, taxability, and jurisdictions.</li>
+  </ul>
+
+  <li><!--5288-->The Vertex Central graphic user interface is now supported on Apple Safari and Mozilla Firefox.</li>
+  <li><!--858702-->Vertex O Series data has been consolidated into two files: Standard (VertexOSeries) and/or Leasing (VertexOSeriesLease) data files. These data files apply to full, delta, and interim updates. Vertex O Series version 6.0 users operating in a global environment benefit from the streamlined maintenance provided by consolidated monthly data files, making it easier to stay current with the latest rates and rule changes.  </li>
+  <li>The About page  is now a printable PDF file.</li>
+ 
+  <li><!--606108 -->In Reporting, the customer name field has been added to the Exemption Certificate report.</li>
+
+ 
+  <li>Tax calculation and compliance changes in version 6.0 include:
+    <ul>
+      <li><!--633304-->Handling of gift cards and gift certificates has been enhanced. As taxes are incurred on the purchases made with these cards, the taxes when purchasing these cards are deferred. Logic to handle this type of transaction processing has been added to the Calculation Engine.</li>
+      <li><!--584306, 584306-->
+      Processing for transactions in Canada has been enhanced, including full country level Goods and Services Tax (GST) support and recoverability. Vertex O Series now charges a single tax with the national and provincial components broken out including the HST (Harmonized Sales Tax), PST (Provincial Sales Tax) or QST (Quebec Sales Tax).</li>
+      <li><!--638690-->You can now use Brazilian Institute of Geography and Statistics (IBGE) jurisdiction codes as required by the Brazilian government for compliance reporting purposes. IBGE is the agency responsible for statistical, geographic, cartographic, geodetic, and environmental information in Brazil. IBGE has established a coding system that identifies different municipalities within Brazil to help gather this information. Identification of these jurisdiction codes is required for compliance reporting purposes. If your Vertex O Series regional license includes Brazil, Vertex O Series version 6.0  now supplies these IBGE codes and provides this capability via look-up functionality.</li>
+      <li>Vertex O Series version 6.0 users benefit from a newly-incorporated reverse charge mechanism for imports. When a company receives imports into certain jurisdictions, O Series calculates Import VAT, applies a reverse charge, and in turn indicates that the tax was of type input/output.</li>
+      <li><!--836594 -->The Calculation Engine now accepts a physical presence indicator for each location specified within a transaction.</li>
+      
+      <li><!--836584 -->The Calculation Engine now accepts multiple nexus indicators to specify different jurisdiction levels.</li>
+      <li><!--751152 -->The Tax Area ID lookup now has two lines for addresses, each 100 characters maximum length.</li>
+
+      <li>O Series now allows the user to applies a tax surcharge per unit quantity of an item.</li>
+      <li><!--174064 --> Users can now assign a Reason Code to the Nontaxable or Exempt portion of a U.S. Max Tax rule.</li>
+      <li><!--237276 -->Vertex Exemption Certificate Manager permits users to select multiple states for the same certificate.</li>
+            
+      <li><!--847102, 827700 -->When calculating the recoverability of negative tax amounts, O Series now correctly stores the recoverable amount as a negative number.</li>
+    </ul>
+  </li>
+   <li>Taxability Mapping Enhancements:
+    <ul>
+      <li><!--577696-->The jurisdiction selector now shows a 'D' for deferred taxability in those cases where a lower level jurisdiction defers to a higher level jurisdiction.</li>
+    </ul>
+  </li>
+  
+ 
+  <li>Vertex has added support for the following platforms with O Series for version 6.0:
+    <ul>
+      <li>Application servers: JBoss 5.1, WebLogic Server 11gR1 (10.3.1)</li>
+      <li>Database servers: IBM DB2 UDB Version 9.7 (for Windows, UNIX, or Linux)</li>
+      <li>Operating systems: Windows 7</li>
+    </ul>
+  </li>
+  <li>Vertex has retired support for the following platforms with O Series for version 6.0:
+    <ul>
+      <li>Application servers: JBoss 4.0.2, Tomcat 5.5, WebLogic 9.2</li>
+      <li>Database servers: IBM DB2 8.2, Oracle 9.2, Oracle 10.1, SQL Server 2000</li>
+      <li><!--639060 -->Web browsers: Microsoft Internet Explorer version 6</li>
+    </ul>
+  </li>
+
+    <li>In the Vertex Configuration file, the taxgis.jurisdictionfninder.ToUseVertexCompressionLogic parameter has been deprecated. Use the following parameters instead:
+      <ul>
+        <li>taxgis.jurisdictionfninder.ToUseVertexCompressionLogicCity</li>
+        <li>taxgis.jurisdictionfninder.ToUseVertexCompressionLogicCountry</li>
+        <li>taxgis.jurisdictionfninder.ToUseVertexCompressionLogicMainDivision</li>
+        <li>taxgis.jurisdictionfninder.ToUseVertexCompressionLogic SubDivision</li>
+      </ul>
+    </li>
+</ol>
+
+<p class="Right"><a href="#Contents">^</a></p>
+<hr />
+
+<h2><a name="Known" id="Known"></a>Known issues</h2>
+<h3>Installation</h3>
+<ul>
+  <li><!-- 268980 -->DB2 tablespace names must not contain a dash. DB2 jdbc drivers will not correctly parse database 
+  table create statements with a dash in the tablespace name, and the Vertex O Series installation will fail.</li>
+</ul>
+<h3>Servlet container</h3>
+<ul><li><!--No defect # -->Vertex recommends using the JAXP 1.2 XML parser from Sun, which is provided
+      with the  Vertex Web applications. If your servlet container follows section
+      SRV.9.7.2 of the Java Servlet Specification, then it uses JAXP 1.2. Note that some servlet
+      containers  may intercept the JAXP 1.2 XML parser. If this is the case with
+      your servlet container, refer to the documentation for your servlet container for details on configuring
+      the Vertex-supplied XML parser so that it functions properly in this environment.
+      Also, refer to the <em>Installation Guide</em> for information on preparing the servlet
+  container.</li>
+</ul>
+<h3>Integrations</h3>
+
+<ul>
+    <li><!-- No defect # -->If you are planning to perform transactions that involve the conversion of one currency to another you must set up the interface between your Enterprise Resource Planning (ERP) software and Vertex O Series to pass Vertex conversion rates and currency codes for the locations in the transaction.  The locations may be any or all of the following that are applicable in your situation:
+      <ul>
+        <li> Physical Origin (PO)</li>
+      
+    <li>Administrative Origin (AO) </li>
+      <li> Administrative Destination (AD)</li>
+      <li> Destination (D)</li>
+    </ul>
+    <li>
+    <!-- No defect # -->
+  For performance reasons, objects returned by the API may reference objects used internally by 
+        the system.  Mutable objects returned by the API should not be modified because modifying internal attributes 
+can cause unpredictable results. Examples of mutable objects returned by the API are java.util.Date and Java arrays.    </li>
+</ul>
+
+<h3>WebLogic</h3>
+
+The following issues exist in deployments that use selected versions of WebLogic:
+<ul>
+<li>In deployments that use WebLogic 10.3.3, 10.3.4, 10.3.5, or 10.3.6 with AIX 6 or 7 and Address Cleansing, the normal EAR deployment for O Series SR4 and later does not work properly. The following workaround makes O Series function properly, but disables Address Cleansing. To implement the workaround, follow these steps:</li>
+<ol>
+<li>Edit the WAR file to remove the metro jar files webservices*.jar.</li>
+<li>Remove the weblogic.xml file from the WEB-INF folder.</li>
+<li>Repackage and deploy the WAR file.</li>
+</ol>
+<li>In deployments that use WebLogic 10.3.6 with Windows, the normal EAR deployment for O Series SR4 and later does not work properly. There is no workaround. WebLogic 10.3.5 and earlier work with Windows.</li>
+</ul>
+
+<h3>Certificates</h3>
+
+<ul>
+  <li><!-- 39483 -->When doing a certificate search by Imposition, the search only displays impositions that are not checked </li>
+
+
+</ul>
+<h3>Vertex Central - General</h3>
+<ul>
+  <li><!-- WDM3376 -->
+  Use the Vertex Central interface for navigation, not  the buttons of your browser.</li>
+  <li><!--no defect #-->Depending on the display resolution of your monitor and the toolbar settings of your browser, some parts of the Vertex Central window may not display. For best results, view the browser window in full screen mode by selecting <span class="Strong">View &gt; Full Screen</span> from the browser's main menu or by pressing <strong>F11</strong>.</li>
+  <li><!-- 480766 -->If you plan to log in to Vertex Central on more than one browser window on the same computer (for example,
+    to log in to multiple partitions at the same time), you must open a new browser instance for each login. If you open
+  a new browser window from within the current browser window, you may experience unexpected results.</li>
+  <li><!-- 68956, 3958 -->Avoid using an apostrophe ('), pipe character (|), or tilde (~)
+  as naming conventions in Vertex Central.</li>   
+</ul>
+
+<h3>Vertex Central - My Enterprise</h3>
+
+<ul>
+<li><!-- 291420 -->You can set broad taxability configuration options for taxpayers, customers, and vendors:
+      <ul>
+      <li>Taxpayers can be set as Generally Taxable, 100% Exempt, or Products are Generally Nontaxable.</li>
+      <li>Customers and vendors can be set as Generally Taxable or 100% Exempt.</li>
+    </ul>
+    Historical values for these settings are not maintained in the data. If you change one of these settings, the new setting 
+  will apply for that party for all transactions (both future and historical credit transactions).  </li>
+  </ul>
+
+<h3>Vertex Central - Tax Setup </h3>
+<ul>
+<li>The Tax Assist attribute, calculateVendorTaxIndicator, does not calculate tax from both the seller   and buyer perspectives for a Purchase Order request message, as specified. To calculate this tax, use one of the following methods:</li>
+<ul>
+<li>In Vertex Central, use Taxability Mapping to map the taxpayer to the <span class="Code">Qualifying Conditions &gt; Special Taxability Drivers > Consumer Use Tax Accrual Indicator</span> taxability category.</li>
+<li>In the XML, pass <span class="Code">calculateVendorTaxIndicator=true</span> in the Invoice line.</li>
+</ul>
+</ul>
+
+<h3>Vertex Central - Tools</h3>
+<ul>
+  <li><!-- 59634 -->When loading a transaction  in Transaction Tester that has the multicomponent indicator set on a line item,  the <strong>Multicomponent</strong> check box does  not populate. Select this check box before running the transaction.</li>
+</ul>
+
+<h3>&nbsp;</h3>
+<hr />
+
+<h2><a name="Product" id="Product"></a>Product description</h2>
+<p>The Vertex O Series platform includes the following products and features:</p>
+<h3>Vertex Indirect Tax O Series</h3>
+<p>Vertex&reg; Indirect Tax <span class="Emphasis">O Series</span>&reg; integrates with your financial, accounting, CRM, or other financial system to automatically determine tax for  business transactions. Vertex O Series includes transaction tax calculation functionality,  tax jurisdiction identification using Vertex&reg; TaxGIS<sup>TM</sup>, and data logging processes. For up-to-date hardware and software requirements, refer to the <em>Installation Guide</em>.</p>
+<h3>Vertex Exemption Certificate Manager</h3>
+<p>Vertex&reg; Exemption Certificate Manager&#8482; (ECM) automates the collection, validation, and maintenance of tax exemption certificates for North American jurisdictions. ECM features include a library of jurisdiction forms, batch letter processing for sending certificate-related notifications, and certificate non-compliance and audit reporting.</p>
+<h3>Vertex Reporting and Analysis</h3>
+Vertex&reg; Reporting and Analysis&#8482; is a powerful reporting tool that enables you to analyze trends, spot irregularities, and turn tax data into invaluable information for tax-savings strategy.
+<h3>Vertex Indirect Tax for Leasing</h3>
+Vertex&reg; Indirect Tax for Leasing provides specialized rates and rules for processing lease tax transactions. Tax calculations on rental and lease transactions consider qualifiers such as the term of the agreement, weight, type of lease, and others. Calculation results include surcharges and fees in addition to the sales and use taxes for the transaction.
+<h3>Vertex Indirect Tax for Retail</h3>
+Vertex&reg; Indirect Tax for Retail provides a centralized, efficient, accurate, and consistent process for all sales 
+    channels, including remote Point-of-Sale (POS) locations that  permits retail companies to eliminate manual tax 
+    compliance efforts and ultimately reduce audit exposure.
+<h3>Vertex Address Cleansing</h3>
+Vertex&reg; Address Cleansing  is an on-line service that improves the accuracy of taxing jurisdiction determination by evaluating U.S. addresses and returning validated information including full ZIP+4 postal codes.
+<p class="Right"><a href="#Contents">^</a></p>
+<hr />
+
+<h2><a name="Install" id="Install"></a>Installation notes</h2>
+<p class="style1">If you are installing Vertex O Series for the first time, refer to the instructions in the <span class="Emphasis">Installation Guide</span> to install Vertex O Series 6.0, and then follow the instructions below to apply this Service Release.  Applying this Service Release installs files on your system. Do not remove these files. </p>
+<p class="Note">Vertex O Series Service Releases are cumulative.  For example, if you are on O Series v6.0 and apply the v6.0 SR3 patch, you will install all the changes made in v6.0 SR1 through v6.0 SR3. Should the latest Service Release installation fail, Vertex Support can help you revert easily to your previous version. Do not install several Service Releases one after the other at one time or you will have to back out each Service Release separately to revert to your previous version</p>
+
+<h3>Applying  6.0 SR7.7</h3>
+<h4>Before you begin</h4>
+<ul>
+  <li>If you have multiple instances of O Series pointing to one database and are applying a patch you <em>must</em> wait until the patch application is completed before applying the patch to the next instance. For example, you may have multiple instances of O Series for load balancing.</li>
+  <li>Review the <em>Installation Guide</em> chapter titled &quot;Deploying Your Servlet Container&quot; as well as the pre- and post- installation chapters for any notes or special instructions related to your particular Web application server.</li>
+  <li>If you plan to deploy O Series using Oracle WebLogic, you <span class="Emphasis">must</span> deploy the O Series <span class="Code">.ear</span> files, not the <span class="Code">.war</span> files.</li>
+  <li>Ensure you have the correct Vertex O Series License file, and that it is copied into the Vertex Home directory.</li>
+  <li>Ensure that the Web Archive (WAR) and Enterprise Archive (EAR) files for the O Series components are in your Web directory. If these files were moved, the service release may not install correctly. </li>
+  <li>Ensure that your application server user account and the user account used to install this service release have full read, write, create, and delete access to the Vertex Home directory and all subdirectories. </li>
+  <li>If you have purchased Vertex Reporting and Analysis, ensure that your database user ID has permission to create a database view. </li>
+  <li>Vertex recommends that you turn off schema validation before applying a Service Release. </li>
+  <li>Vertex recommends that you back up all O Series databases before applying a Service Release. To ensure the integrity of the system, you should always back up all O Series databases at the same time. If you need to restore any one database, you must restore all the databases. </li>
+  <li>
+    <!-- 743250 -->
+    If you are applying this Service Release to a system running the AIX 6.1 Operating System, be sure to perform the installation of the Service Release as a user in the root group.</li>
+</ul>
+<h4>To apply this Service Release</h4>
+<ol>
+  <li>Copy the JAR file for the service release (vertex-o-series-patch-6.0.7.7.1.jar) to the patch directory located under the <em>Vertex Home</em> directory, which is the root directory in which TPS is installed. </li>
+  <li>Change the working directory to the patch directory. </li>
+  <li>Stop the application server. </li>
+  <li>Undeploy the Web applications. </li>
+  <li>
+    <p>Enter the following command to launch the installer and apply the service release:</p>
+    <p><span class="Code">java -jar -Djdbc.classpath=</span><span class="CodeVariable">jdbc_driver_files</span><span class="Code"> vertex-o-series-patch-6.0.7.7.1.jar</span></p>
+    <p>where:</p>
+    <span class="CodeVariable">jdbc_driver_files</span> is the full path and file name of the installed jdbc driver file or files. This is only necessary when using a jdbc driver other than  one supplied by Vertex. </li>
+  <li>Deploy the Web applications. Refer to the <em>Installation Guide</em> for details. </li>
+</ol>
+<h4>Special instructions for IBM DB2 UDB for iSeries V5R4 with i5/OS users</h4>
+If you are using IBM DB2 UDB for iSeries V5R4 with i5/OS, complete the following steps to install the service release:
+<ol>
+  <li>Start Qshell. </li>
+  <li>
+    <p>Enter the following command to launch the installer and apply the service release:</p>
+    <p><span class="Code">java -jar -Djdbc.classpath=/</span><span class="CodeVariable">drvpath</span><span class="Code">/jt400.jar/</span><span class="CodeVariable">path</span><span class="Code">/vertex-o-series-patch-6.0.7.7.1.jar</span></p>
+    <p>where:</p>
+    <span class="CodeVariable">drvpath</span> is the complete file path to the jt400.jar file<br />
+    <br />
+    <span class="CodeVariable">path</span> is the complete file path to the Installation file </li>
+</ol>
+<h3>Removing  6.0 SR7.7</h3>
+<h4>Before you begin</h4>
+<p>Back up the information in your vertex.cfg file before removing the patch. When you remove the patch, a new Vertex configuration file (vertex.cfg) will be created and the current vertex.cfg file will be overwritten, causing any information you entered to be lost.  Caution: Do not replace the vertex.cfg created during patch removal with the vertex.cfg from the current patch. Doing so could result in errors or undesired system behavior because configuration options may have changed.</p>
+
+<h4>To remove this Service Release</h4>
+<ol>
+  <li>Stop the application server.</li>
+  <li>Undeploy the Web applications.</li>
+  <li>Change the working directory to the <em>Vertex Home</em>\patch directory. </li>
+  <li>
+    <p>Enter the following command to launch the installer and remove the service release:</p>
+    <p><span class="style3">java -jar -Djdbc.classpath=</span><span class="CodeVariable">jdbc_driver_files</span><span class="style3"> vertex-o-series-patch-6.0.7.7.1.jar -remove</span></p>
+    <p>where:</p>
+    <p><span class="CodeVariable">jdbc_driver_files</span> is the full path and file name of the installed jdbc driver file or files. This is only necessary when using a jdbc driver other than  one supplied by Vertex. </p>
+  </li>
+  <li>Deploy the Web applications. Refer to the <em>Installation Guide</em> for details.</li>
+</ol>
+<p class="style1">See the <a href="#Known">Known Issues</a> section of these Release Notes for information on installation-related issues in this release. </p>
+
+<p class="Right">&nbsp;</p>
+<hr />
+    
+<h2><a name="Documentation" id="Documentation"></a>Documentation</h2>
+<p>The following documents are available for Vertex O Series:</p>
+<p><span class="Strong">Planning Guide</span> (<span class="Code">Vertex OSeries v6 Planning.pdf</span>) provides a roadmap to the Vertex O Series implementation process. It helps you to proactively plan each step of your O Series deployment to ensure a smooth implementation.</p>
+<p><strong>Installation Guide</strong> (<span class="Code">Vertex OSeries v6 Installation.pdf</span>) contains information system administrators need to install and configure Vertex O Series.</p>
+<p><span class="Strong">Upgrade Guide</span> (<span class="Code">Vertex OSeries v6 Upgrade.pdf</span>) provides best practices and procedures for upgrading to O Series 6.0
+from O Series 4.1 and 5.0.</p>
+    <p><strong>Administration Guide</strong> (<span class="Code">Vertex OSeries v6 Administration.pdf</span> or<span class="Code"> Vertex ECM v6 Administration.pdf</span>) contains
+        instructions for configuring and maintaining Vertex O Series.</p>
+    <p><strong>User's Guide</strong> <span class="style4">(Vertex OSeries v6 Users.pdf)</span> provides conceptual, procedural, and reference information for understanding O Series Vertex Central features and how to use them.</p>
+<p><span class="Strong">Configuration File Parameters Reference Guide</span> (<span class="Code">Vertex OSeries v6 Configuration.pdf </span>or <span class="Code">Vertex ECM v6 Configuration.pdf</span>) provides reference information about the configuration parameters in the Vertex Configuration file.</p>
+    <p><strong>XML Integration Guide</strong> (<span class="Code">Vertex OSeries v6 XML Integration.zip</span>) contains information software developers need to 
+          integrate Vertex O Series with a financial host system using an XML Interface. This guide is distributed as a ZIP 
+        archive containing HTML-based help files.</p>
+    <p><strong>Java Integration Guide</strong> (<span class="Code">Vertex OSeries v6 Java Integration.zip</span>) contains
+          information software developers need to integrate Vertex O Series with a financial host system using a Java Application Programmer's Interface (API). This guide is distributed
+        as a ZIP archive containing HTML-based help files.</p>
+    <p><span class="Strong">Batch Client Interface Guide</span> (<span class="Code">Vertex OSeries v6 Batch Client Interface.pdf</span>) contains information IT professionals need to process multiple transactions through the Batch Client Interface without creating a full integration to the financial host system.</p>
+    <p><strong>Tax Data File Formats Handbook</strong> (<span class="Code">Vertex OSeries v6 Tax Data Format.pdf</span>) describes the Tax Data file formats required to import and export data between Vertex O Series and your financial host system.</p>
+    <p><span class="Strong">Returns Export Data File Format Handbook</span> (<span class="Code">Vertex OSeries v6 Returns Format.pdf</span>) provides information about the Returns Export File generated from Vertex Indirect Tax O Series. The Returns Export File is used to transfer data on transactions in the U.S.,  Canada, and Puerto Rico from Vertex O Series to Vertex Sales Tax Returns for tax return filing.</p>
+    <p><span class="Strong">Reporting Database Views Tip sheet</span> (<span class="Code">Vertex OSeries v6 Reporting  Views.pdf</span>) provides views of information for the data in the Reporting database. These views provide a standard interface to the Reporting database data and can be accessed by any tool capable of querying a database through SQL.</p>
+    <p><span class="Strong">Vertex O Series for Retail Installation and Administration Guide</span> (<span class="Code">Vertex OSeries v6 Retail Install and Admin.pdf</span>) explains how to plan, install, and maintain Vertex O Series for Retail to support tax calculation at multiple point-of-sale locations.</p>
+    <p><span class="Strong">Vertex O Series Retail Tax  Extract Integration Guide</span> (<span class="Code">Vertex OSeries v6 Retail Tax Extract.pdf</span>) explains how to build an interface between the Vertex O Series deployment at your headquarters and your multiple point-of-sale locations using Vertex's Retail Tax Extract data model.</p>
+    <p><strong>ECM Migration Guide</strong> (<span class="Code">Vertex ECM v6 Migration.pdf</span>) provides information for users of Vertex Exemption Certificate Manager version 3.x to migrate their ECM data to the Vertex O Series version 6.0 platform.</p>
+    <p><strong>Vertex Central Web Services Integration Guide</strong> (<span class="Code">Vertex_OSeries_v6_Vertex Central Web Services.zip</span>) provides information for the software developer who uses the Vertex Central Web Services to generate XML messages used in a calling application, such as an ERP, CRM, or other system, to find and retrieve tax data stored in Vertex O Series databases. <br />
+    </p>
+<p>Documentation is updated periodically. This documentation is  available online in the <a href="https://my.vertexinc.com/">myVertex Customer Portal</a>.</p>
+<p>To view the PDF guides, Adobe Reader is required. If needed, go to the Adobe Web site at <a href="http://www.adobe.com/products/acrobat/readstep2.html">www.adobe.com/products/acrobat/readstep2.html</a> to
+      download a free copy of Adobe Reader. For best viewing of our product documentation, Vertex recommends Adobe Reader 7.0 
+  or higher.</p>
+<p>To view the HTML-based integration guides and help, extract
+      each ZIP  file to a local disk and open the default.htm file in the extracted help directory. See the !README.TXT
+  file in each ZIP archive for more details.</p>
+<p>In addition, the following documentation is installed with O Series:</p>
+    <p><span class="Strong">Help for Vertex Central </span> provides screen-specific,
+        context-sensitive online assistance to tax professionals and system administrators using the Vertex
+        Central user interface for Vertex O Series. To access help, click the <strong>Help</strong> link on any window in 
+        Vertex Central. </p>
+    <p><span class="Strong">O Series Javadoc</span> provides
+          reference information detailing the methods used for tax calculation and
+        Tax Area Lookup to programmers using the O Series Java API.</p>
+<p>If you licensed Vertex Indirect Tax for Leasing, you also receive the <strong>Lease Tax Planning Guide</strong> (<span class="Code">Vertex OSeries v6 Lease Tax Planning.pdf</span>). This file is located on the Lease Tax Data CD-ROM.</p>
+<p class="Right"><a href="#Contents">^</a></p>
+<hr />
+    
+<h2><a name="DocErrata" id="DocErrata"></a>Documentation errata</h2>
+This section of these Release Notes provides changes and corrections to O Series product documentation. These updates will be applied to the documentation in future revisions.
+<p>&nbsp;</p>
+<h3>Java Integration Guide</h3>
+<p><!--  45202 -->The "Defining Transaction Line Items" section incorrectly refers to "Flexible Field 3 of 15". This reference should state "Flexible Field 3 of 25".</p>
+<h3>&nbsp;</h3>
+<hr />
+    
+<h2><a name="ContactingVertex" id="ContactingVertex"></a>Contacting Vertex</h2>
+<h3>Customer Support</h3>
+<p>Phone: 800.281.1900, available Monday through Friday from 8:15 A.M. to 8:00 P.M. (US Eastern Time, GMT -5 hours)<br />
+  Fax: 610.640.1207<br />
+  Web: <a href="https://my.vertexinc.com/">my.vertexinc.com</a><br />
+</a></p>
+<h3>Vertex products and services</h3>
+<p>Phone: 800.355.3500<br />
+  Fax: 610.640.5892<br />
+  Web: <a href="http://www.vertexinc.com/products/product_inquiry_form.asp"></a><a href="http://www.vertexinc.com/ContactUs/default.asp">www.vertexinc.com/ContactUs/default.asp</a><br />
+</p>
+<h3>Feedback on Vertex documentation</h3>
+<p> Email: <a href="mailto:documentation@vertexinc.com">documentation@vertexinc.com</a></p>
+<p>&nbsp;</p>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+      
+  <tr>
+    <td width="50%" align="left" valign="top" bordercolor="0"><h3>Vertex Inc.</h3>
+        <p>1041 Old Cassatt Road<br />
+          Berwyn, PA 19312-1151<br />
+          USA</p>
+      <p>Phone: 800.355.3500 or 610.640.4200<br />
+        Fax: 610.640.5892<br />
+        Web: <a href="http://www.vertexinc.com/">www.vertexinc.com</a><br />
+      </p></td>
+    <td width="50%" align="left" valign="top" bordercolor="0"><h3>Vertex Global Tax Solutions Ltd.</h3>
+        <p>1 Furzeground Way<br />
+          Stockley Park<br />
+          Uxbridge, UB11 1EZ<br />
+          United Kingdom</p>
+      <p>Phone: +44 (0)20.8622.3053<br />
+        Fax: +44 (0)20.8622.3200<br />
+        Web: <a href="http://www.vertexinc.com/">www.vertexinc.com</a>          <br />
+      </p></td>
+  </tr>
+</table>
+<p class="Right"><a href="#Contents">^</a></p>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
