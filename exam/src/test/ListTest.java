@@ -187,7 +187,7 @@ public class ListTest {
         // 21, 20, 19, 18, 17, 16 };
         // int[] sample = new int[] { 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14, 0, -2
         // };
-        int[] sample = new int[]{0, -2, 0, 0, -2, 0, 0, 0, 0, -2, 1, 0, -2, 0, 0, 0, 0, -2, 1, 0, -2, 0, 0, 0, 0, -2, 1, 0, -2, 0, 0, 0};
+        int[] sample = new int[]{0, 0, 0, -2, 0, 0, 0, 0, -2, 1, 0, -2, 0, 0, 0, 0, -2, 1, 0, -2, 0, 0, 0, 0, -2, 1, 0, -2, 0, 0, 0};
         // int[] sample = new int[] { 0, 2 };
         System.out.println(sample.length);
         List<Integer> list = new ArrayList<>();
@@ -200,8 +200,6 @@ public class ListTest {
             public int compare(Integer o1, Integer o2) {
                 // miss the o1 = o2 case on purpose
                 // return o1.compareTo(o2);
-                System.out.print(o1 + " ");
-                System.out.println(o2);
                 return o1 > o2 ? 1 : -1;
             }
         });
