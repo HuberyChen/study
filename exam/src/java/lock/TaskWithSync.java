@@ -1,4 +1,4 @@
-package lock;
+package java.lock;
 
 /**
  * @author hubery
