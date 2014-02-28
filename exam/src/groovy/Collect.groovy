@@ -18,5 +18,7 @@ class Collect {
         for (def i = 0; i < collect.size(); i++) {
             println(collect[i])
         }
+        println("--------------------")
+        println collect?.size();
     }
 }
