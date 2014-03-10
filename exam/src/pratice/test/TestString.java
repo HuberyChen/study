@@ -58,11 +58,11 @@ public class TestString {
     }
 
     @Test
-    public void setTest(){
+    public void setTest() {
         Set<String> list = new HashSet<>();
         list.add("1");
         list.add("1");
-        for (String s : list){
+        for (String s : list) {
             System.out.println(s);
         }
     }
@@ -70,5 +70,15 @@ public class TestString {
     @Test
     public void stringFormatTest() {
         System.out.println(String.format("%09d", 1111));
+    }
+
+    @Test
+    public void indexTest() {
+        String requestString = "11 11 11";
+        int index1, index2;
+        index1 = requestString.indexOf(' ');
+        index2 = requestString.indexOf(' ', index1 + 1);
+        System.out.println(index1);
+        System.out.println(index2);
     }
 }

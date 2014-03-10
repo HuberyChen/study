@@ -1,13 +1,12 @@
 package pratice.test;
 
+import au.com.bytecode.opencsv.CSVReader;
+import org.junit.Test;
+
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.List;
-
-import org.junit.Test;
-
-import au.com.bytecode.opencsv.CSVReader;
 
 public class InserSQL {
 

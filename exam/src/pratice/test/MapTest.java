@@ -1,6 +1,7 @@
 package pratice.test;
 
 import org.junit.Test;
+import org.springframework.util.CollectionUtils;
 
 import java.util.HashMap;
 import java.util.LinkedHashMap;
@@ -36,8 +37,15 @@ public class MapTest {
 
     @Test
     public void getTest() {
-        Map<String, String> testMap = new HashMap<>();
-        System.out.println(hasText(testMap.get("2")));
+        Map<String, Map<String, String>> testMap = new HashMap<>();
+        Map<String, String> map = testMap.get("2");
+        if (CollectionUtils.isEmpty(map)) {
+            map = new HashMap<>();
+            map.put("2", "2");
+            testMap.put("2", map);
+        }
+        Map<String, String> map1 = testMap.get("2");
+        System.out.println(CollectionUtils.isEmpty(map1));
     }
 
     public static boolean hasText(String text) {
