@@ -12,6 +12,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.Date;
 import java.util.List;
+import java.util.TimeZone;
 
 public class GetDateTime {
 
@@ -66,9 +67,8 @@ public class GetDateTime {
     @Test
     public void dateListSortTest() {
         List<Date> dates = new ArrayList<>();
-        dates.add(DateUtils.date(1991, 3, 1));
         dates.add(DateUtils.date(1991, 1, 1));
-        dates.add(DateUtils.date(1991, 2, 1));
+        dates.add(DateUtils.date(1991, 1, 1));
         Collections.sort(dates, new Comparator<Date>() {
             @Override
             public int compare(Date date1, Date date2) {
@@ -85,5 +85,25 @@ public class GetDateTime {
     public static String toString(Date date, String format) {
         SimpleDateFormat dateFormat = new SimpleDateFormat(format);
         return dateFormat.format(date);
+    }
+
+    public static Date getCurrentGMTDate() {
+        Date now = Calendar.getInstance().getTime();
+        TimeZone fromTimeZone = DateUtils.calendar(now).getTimeZone();
+        Date fromDate = DateUtils.toCurrentTimeZone(now, fromTimeZone);
+        TimeZone toTimeZone = TimeZone.getTimeZone("GMT");
+
+        Calendar toCal = Calendar.getInstance(toTimeZone);
+        toCal.setTime(fromDate);
+        Calendar fromCal = Calendar.getInstance(fromTimeZone);
+        fromCal.setTime(fromDate);
+
+        int offset = toTimeZone.getRawOffset() + toCal.get(Calendar.DST_OFFSET) - fromTimeZone.getRawOffset() - fromCal.get(Calendar.DST_OFFSET);
+        return DateUtils.add(fromDate, Calendar.MILLISECOND, offset);
+    }
+
+    @Test
+    public void getDateTest() {
+        System.out.println(getCurrentGMTDate());
     }
 }

@@ -1,10 +1,13 @@
 package pratice.test;
 
+import com.quidsi.core.json.JSONBinder;
 import org.junit.Test;
 
 import java.io.File;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 import java.util.regex.Pattern;
 
@@ -80,5 +83,30 @@ public class TestString {
         index2 = requestString.indexOf(' ', index1 + 1);
         System.out.println(index1);
         System.out.println(index2);
+    }
+
+    @Test
+    public void stringBuilderTest() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("1");
+        sb.delete(sb.length() - 1, sb.length());
+        System.out.println(sb.toString());
+    }
+
+    @Test
+    public void stringListTest() {
+        List<String> addresses = new ArrayList<>();
+        addresses.add("ab");
+        addresses.add("cd");
+        String[] test = addresses.toArray(new String[addresses.size()]);
+        for (String x : test) {
+            System.out.println(x);
+        }
+    }
+
+    @Test
+    public void jsonTest() {
+        System.out.println(JSONBinder.binder(String.class).toJSON(""));
+        System.out.println("");
     }
 }

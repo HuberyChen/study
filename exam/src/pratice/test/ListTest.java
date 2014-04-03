@@ -1,6 +1,7 @@
 package pratice.test;
 
 import org.junit.Test;
+import org.springframework.util.CollectionUtils;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -179,6 +180,17 @@ public class ListTest {
         }
         for (Integer integer : testList) {
             System.out.println(integer);
+        }
+    }
+
+    @Test
+    public void addAllTest() {
+        List<String> list = new ArrayList<>();
+        list.addAll(Collections.EMPTY_LIST);
+        System.out.println(CollectionUtils.isEmpty(list));
+        for (String a : list) {
+            System.out.println("enter");
+            System.out.println(a);
         }
     }
 
