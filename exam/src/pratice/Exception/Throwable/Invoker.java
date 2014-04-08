@@ -1,4 +1,4 @@
-package pratice.exception.Throwable;
+package pratice.exception.throwable;
 
 /**
  * @author hubery.chen

@@ -1,4 +1,4 @@
-package pratice.exception.Construction;
+package pratice.exception.construction;
 
 import java.io.IOException;
 

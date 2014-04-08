@@ -1,4 +1,4 @@
-package pratice.test.AES;
+package pratice.test.aes;
 
 import com.quidsi.core.crypto.AES;
 import com.quidsi.core.json.JSONBinder;
