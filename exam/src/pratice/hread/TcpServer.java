@@ -26,7 +26,7 @@ public class TcpServer implements Runnable {
 
         @Override
         public void uncaughtException(Thread t, Throwable e) {
-            System.out.println("Thread: " + t.getName() + "appears exception,to reset itself,please analyzing reason.");
+            System.out.println("thread: " + t.getName() + "appears exception,to reset itself,please analyzing reason.");
             e.printStackTrace();
             new TcpServer();
         }
