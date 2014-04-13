@@ -1,4 +1,4 @@
-package effectiveJava;
+package com.effective.java;
 
 /**
  * @author hubery
