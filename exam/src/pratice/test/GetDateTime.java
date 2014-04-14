@@ -17,6 +17,11 @@ import java.util.TimeZone;
 public class GetDateTime {
 
     @Test
+    public void getTest() {
+        System.out.println(new Date().getMonth());
+    }
+
+    @Test
     public void test() {
         String startDate = "11/25/2013";
         String endDate = "11/26/2013";

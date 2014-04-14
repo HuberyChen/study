@@ -4,8 +4,10 @@ import org.junit.Test;
 import org.springframework.util.CollectionUtils;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -120,6 +122,11 @@ public class ListTest {
         List<String> array = new ArrayList<>();
         array.add("1");
         array.add("2");
+        array.add("3");
+        array.remove("2");
+        for (String s : array) {
+            System.out.println(s);
+        }
         for (int i = 0; i < 15; i++) {
             System.out.print(i + ",");
         }
@@ -222,5 +229,53 @@ public class ListTest {
                 return o1 > o2 ? 1 : -1;
             }
         });
+    }
+
+    @Test
+    public void listTest() {
+        Exam exam = new Exam();
+        List<String> list1 = new ArrayList<>();
+        List<String> list2 = new ArrayList<>();
+        list1.add("1");
+        list2.add("2");
+        exam.setList(list1);
+        for (String s : exam.getList()) {
+            System.out.println(s);
+        }
+        exam.setList(list2);
+        for (String s : exam.getList()) {
+            System.out.println(s);
+        }
+    }
+
+    private class Exam {
+        private List<String> list = new ArrayList<>();
+
+        public List<String> getList() {
+            return list;
+        }
+
+        public void setList(List<String> list) {
+            this.list = list;
+        }
+    }
+
+    @Test
+    public void addNumberTest() {
+        Integer number = 0;
+        Date date = new Date();
+        System.out.println(date);
+        System.out.println(number);
+        add(number, date);
+        System.out.println(number);
+        System.out.println(date);
+    }
+
+    private void add(Integer number, Date date) {
+        ++number;
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTime(date);
+        calendar.add(Calendar.DATE, 1);
+        date = calendar.getTime();
     }
 }
